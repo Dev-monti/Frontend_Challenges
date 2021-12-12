@@ -1,0 +1,656 @@
+/* ===========================
+Index Of css :
+01. Elements CSS
+02. Header CSS
+03. Hero CSS
+04. About CSS
+05. Portfolio CSS
+06. Contact CSS
+07. Blog CSS
+08. Spinner CSS
+09. Media Query CSS
+========================== */
+
+/*===========================
+    01. Elements CSS
+===========================*/
+$blackColor:#222;
+$light_redColor:#fc5356;
+$text_color:#444;
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+body *{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5{
+    color: $blackColor;
+}
+h1{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: 11px;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 30px;
+    font-weight: 700;
+}
+h4{
+    font-size: 20px;
+}
+h5{
+    font-size: 16px;
+    text-transform: capitalize;
+}
+p{
+    font-size: 16px;
+    font-weight: 500;
+    color: $text_color;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+button{
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    color: $blackColor;
+    letter-spacing: 4px;
+    padding: 10px 15px;
+    background: transparent;
+    border: 2px solid $light_redColor;
+    border-radius: 3px;
+    transition: .5s;
+}
+button:focus,input:focus,textarea:focus{
+    outline: 0;
+}
+button:hover{
+    color: #fff;
+    transition: .5s;
+}
+button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background: $light_redColor;
+    z-index: -9999;
+    transition: .5s;
+}
+button:hover::before{
+    width: 100%;
+    transition: .5s;
+}
+.about,
+.blog,
+.our_portfolio,
+.contact,
+.hero{
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+}
+/*===========================
+    02. Header CSS
+===========================*/
+header nav{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    width: 70px;
+    height: 50vh;
+    transform: translate(0,-50%);
+    background-color: #fff;
+    border: 1px solid rgba(34, 34, 34, 0.199);
+    border-radius: 7px 0 0 7px;
+    box-shadow: 0 0 80px #22222217;
+    z-index: 999999;
+    opacity: 1;
+    transition: .5s;
+}
+header nav.active{
+    opacity: 1;
+    transition: .5s;
+}
+header ul{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px 0;
+    height: 100%;
+} 
+header ul li a{
+    position: relative;
+}
+header ul li a .tool-tip{
+    position: absolute;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 130%;
+    background: $blackColor;
+    border-radius: 10px 0 0 10px;
+    transition: 2s;
+}
+header ul li a i{
+    font-size: 22px;
+    color: $blackColor;
+}
+header ul li a.active,
+header ul li a:hover{
+    padding: 10px;
+    background-color: $light_redColor;
+    border-radius: 10px;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+header ul li a.active i,
+header ul li a:hover i{
+    color: #fff;
+    transition: .5s;
+}
+header .btn-nav-links{
+    display: none;
+    position: fixed;
+    font-size: 30px;
+    color: #fff;
+    top: 20px;
+    right: 10px;
+    padding: 0 9px;
+    background: $light_redColor;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 99999;
+    transition: .5s;
+}
+/*===========================
+    03. Hero CSS
+===========================*/
+.hero.active{
+    height: auto;
+    margin: 5vh 0;
+    padding: 0 35px;
+    overflow: visible;
+}
+.hero.active .small_back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 200px;
+    background: $light_redColor;
+    border-radius: 0 15px 0 15px;
+    z-index: -1;
+}
+.img_person{
+    padding-right: 70px;
+}
+.img_person img{
+    height: 90vh;
+    border-radius: 15px;
+}
+.body_hero{
+    padding: 0 40px 0 50px;
+}
+.body_hero span{
+    color: #fff;
+    padding: 5px 10px;
+    background-color: $light_redColor;
+    border-radius: 3px;
+}
+.body_hero h1{
+    margin: 15px 0;
+}
+.body_hero p{
+    font-size: 17px;
+    margin: 15px 0 30px;
+    line-height: 2rem;
+}
+/*===========================
+    04. About CSS
+===========================*/
+.about.active,
+.blog.active,
+.our_portfolio.active{
+    padding: 100px 0;
+    height: auto;
+    overflow: visible;
+}
+.titel_section{
+    position: relative;
+    text-align: center;
+}
+.titel_section::before{
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    color: #fff;
+    letter-spacing: 0px;
+    padding: 5px 20px;
+    background-color: $light_redColor;
+    border-radius: 15px;
+}
+.about .titel_section::before{
+    content: "See My Resume";
+}
+.content-about{
+    margin: 50px 0;
+}
+.detials-content-about{
+    padding: 0 40px;
+}
+.detials-content-about .about-dev{
+    padding-right: 50px;
+    font-size: 19px;
+    word-spacing: 4px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.detials-content-about h5{
+    color: $text_color;
+    font-weight: 700;
+    margin-bottom: 20px;
+} 
+.detials-content-about h5 p{
+    font-size: 15px;
+    display: inline-block;
+    font-weight: 500;
+}
+.detials-content-about button{
+    margin-top: 20px;
+}
+.skills-info{
+    margin-top: 40px;
+}
+.skills-info .skill{
+    position: relative;
+    color: #fff;
+    margin-bottom: 25px;
+    background-color: #eee;
+    border-radius: 5px;
+    z-index: 1;
+}
+.skills-info .skill .skill-proportion{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+    z-index: -1;
+}
+.skills-info .skill span{
+    display: inline-block;
+    width: 120px;
+    padding: 2px 0 2px 20px;
+    background-color: rgba(0, 0, 0, 0.082);
+}
+.skills-info .html5 .skill-proportion{
+    width: 95%;
+    background-color: rgb(231, 76, 60);
+}
+.skills-info .CSS3 .skill-proportion{
+    width: 90%;
+    background-color: rgb(243, 156, 18);
+}
+.skills-info .jQuery .skill-proportion{
+        width: 70%;
+    background-color: rgb(52, 73, 94);
+}
+.skills-info .PHP .skill-proportion{
+        width: 60%;
+    background-color: rgb(52, 152, 219);
+}
+.skills-info .Wordpress .skill-proportion{
+        width: 85%;
+    background-color: rgb(41, 128, 185);
+}
+.skills-info .Marketing .skill-proportion{
+        width: 45%;
+    background-color: rgb(241, 196, 15);
+}
+.skills-info .skill .num-skill-proportion{
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: $text_color;
+}
+.Experience-Qualification h3{
+    margin: 70px 0 40px;
+}
+.singal-Expr-Qlft{
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+.body-Expr-Qlft{
+    padding: 32px;
+    border: 1px solid rgba(68, 68, 68, 0.164);
+    border-radius: 10px;
+}
+.icon-Expr-Qlft{
+    width: 60px;
+    height: 60px;
+    background-color: $light_redColor;
+    border-radius: 50%;
+}
+.icon-Expr-Qlft svg{
+    fill: #fff;
+    width: 25px;
+}
+.date-Expr-Qlft{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    color: $light_redColor;
+    padding: 3px 15px;
+    margin: 25px 0 20px;
+    background-color: #fc53561f;
+    border-radius: 10px;
+}
+.body-Expr-Qlft h4{
+    font-size: 18px;
+    font-weight: 700;
+}
+.body-Expr-Qlft h4 span{
+    font-size: 15px;
+    opacity: .8;
+}
+.body-Expr-Qlft p{
+    margin-top: 15px;
+    font-size: 15px;
+}
+/*===========================
+    05. Portfolio CSS
+===========================*/
+.our_portfolio .titel_section::before{
+    content: "See My Works";
+}
+.item-portfolio{
+    margin-bottom: 70px;
+    padding: 0 18px;
+    cursor: pointer;
+}
+.item-portfolio:hover .over-lay-img-prtf{
+    opacity: 1;
+    transition: .5s;
+}
+.img-porfolio{
+    position: relative;
+}
+.over-lay-img-prtf{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: 0px;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.521), transparent);
+    opacity: 0;
+    transition: .5s;
+}
+.over-lay-img-prtf button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 18px;
+    padding: 3px 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+.over-lay-img-prtf button:hover{
+    color: $blackColor;
+    background: #fff;
+    transition: .5s;
+}
+.over-lay-img-prtf button::before{
+    background: transparent;
+}
+.info_img_prtf{
+    font-weight: 800;
+    margin-top: 20px;
+    position: relative;
+}
+.info_img_prtf::before{
+    content: "CATEGORY";
+    position: absolute;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 1px;
+    top: 35px;
+    left: 0;
+    padding: 5px 10px;
+    background-color: $light_redColor;
+    border-radius: 25px;
+}
+.overlay-view{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(34, 34, 34, 0.726);
+}
+.overlay-view img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%,-50%);
+}
+.bi-x-square{
+    position: fixed;
+    top: 35px;
+    right: 20%;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+/*===========================
+    06. Contact CSS
+===========================*/
+.contact.active{
+    padding-top: 100px;
+    height: auto;
+    overflow: visible;
+}
+.contact .titel_section::before{
+    content: "Get in Touch";
+}
+.centent-contact,
+.blogs,
+.view_portfolio{
+    margin-top: 50px;
+}
+.info-contact h4{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.info-contact h4 span{
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 10px 0 20px;
+}
+.info-contact div div{
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    border-radius: 50%;
+    background-color: $light_redColor;
+}
+.info-contact div div svg{
+    width: 20px;
+    fill: #fff;
+}
+.inputs form input,.inputs form textarea{
+    width: 100%;
+    padding: 5px 10px;
+    margin-bottom: 30px;
+    border: 2px solid rgba(68, 68, 68, 0.26);
+    border-radius: 3px;
+}
+.inputs form input:focus,.inputs form textarea:focus{
+    border: 2px solid $light_redColor;
+}
+/*===========================
+    07. Blog CSS
+===========================*/
+.blog{
+    position: relative;
+}
+.blog .titel_section::before{
+    content: "Latest Blog Posts";
+}
+.all-blog{
+    position: relative;
+}
+.singal-blog{
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+.body-blog{
+    position: relative;
+    background-color: rgba(68, 68, 68, 0.030);
+}
+.date-blog{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 3px 7px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background-color: rgba(68, 68, 68, 0.8);
+}
+.date-blog svg{
+    margin-right: 5px;
+}
+.img-blog img{
+    border-radius: 0 0 25px 25px;
+    cursor: pointer;
+}
+.info-blog{
+    padding: 30px 15px 40px;
+}
+.info-blog h4{
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .5s;
+}
+.info-blog h4:hover{
+    color: $light_redColor;
+    cursor: pointer;
+    transition: .5s;
+}
+.info-blog p{
+    margin-top: 10px;
+}
+.display-blog{
+    display: none;
+    position: absolute;
+    top: -70px;
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #cecece;
+    opacity: 0;
+    z-index: 9999;
+    transition: .5s;
+}
+.display-blog.active{
+    display: block;
+    opacity: 1;
+    transition: .5s;
+}
+.display-blog .bi-x-circle{
+    font-size: 30px;
+    color: $blackColor;
+    cursor: pointer;
+}
+.display-blog .titel_section{
+    margin-top: 70px;
+}
+.content-blog .img-blog{
+    margin-top: 45px;
+}
+.content-blog .info-blog{
+    padding-left: 0;
+}
+/*===========================
+    08. Spinner CSS
+===========================*/
+.spinner{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: $light_redColor;
+    z-index: 999999;
+}
+/*===========================
+    09. Media Query CSS
+===========================*/
+@media (max-width: 1199.98px){
+    .body_hero{
+        padding: 0;
+    }
+    header .btn-nav-links{
+        display: inline-block;
+    }
+    header nav{
+        opacity: 0;
+    }
+}
+@media (max-width: 991.98px){
+    .small_back,
+    .photo_person{
+        display: none;
+    }
+    .body_hero{
+        padding-top: 100px;
+    }
+    .hero .row{
+        justify-content: center;
+    }
+    .body_hero{
+        text-align: center;
+    }
+    .detials-content-about{
+        padding: 0;
+    }
+}
+@media (max-width: 767.98px) {
+    .info-contact{
+        margin-bottom: 25px;
+    }
+}

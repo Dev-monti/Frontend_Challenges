@@ -1,0 +1,148 @@
+/*===========================
+    00. Elements CSS
+===========================*/
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: #c5e4e7;
+  padding: 0 30px;
+}
+
+button, input {
+  border: 0;
+  outline: 0;
+}
+
+.container {
+  height: 100vh;
+}
+
+.hero {
+  padding: 20px 0;
+  width: 600px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.inputs {
+  padding: 0px 10px;
+}
+
+label {
+  display: block;
+  margin: 0 0 10px;
+  font-size: 12px;
+  color: #5e7a7d;
+}
+
+.inputs > input,
+.inputs div input[type=number] {
+  text-align: right;
+  width: 100%;
+  padding: 2px 0;
+  color: #00494d;
+  font-size: 17px;
+  font-weight: 700;
+  background: #f4fafa;
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+
+.inputs > input:focus {
+  border: 2px solid #7f9c9f;
+}
+
+i {
+  position: absolute;
+  font-size: 13px;
+  color: #7f9c9f;
+  margin: 8px;
+}
+
+.percent {
+  margin: 25px 0 15px;
+}
+
+.inputs div input[type=number] {
+  width: 30%;
+  border: 2px solid #7f9c9f;
+}
+
+.inputs div input {
+  width: 30%;
+  margin-bottom: 15px;
+}
+
+.inputs div input[type=submit] {
+  padding: 3px 0;
+  font-size: 18px;
+  color: #fff;
+  background: #00494d;
+  border-radius: 3px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.inputs div input[type=submit]:hover,
+.inputs div input[type=submit].clicked {
+  color: #00494d;
+  background: #c5e4e7;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.rest {
+  padding: 15px 15px;
+  border-radius: 20px;
+  background: #00494d;
+}
+
+.title-rest {
+  margin-bottom: 25px;
+}
+
+.title-rest h5 {
+  position: relative;
+  font-size: 16px;
+  margin: 0;
+}
+
+.title-rest h5::before {
+  position: absolute;
+  content: "/ person";
+  font-size: 12px;
+  color: #7f9c9f;
+  top: 120%;
+}
+
+.title-rest div {
+  font-size: 30px;
+  color: #00e6bf;
+}
+
+.btn-rest {
+  width: 100%;
+  padding: 5px 0;
+  margin-bottom: 7px;
+  font-weight: 700;
+  background: #a3eef5;
+  border-radius: 4px;
+  opacity: .6;
+}
+
+.btn-rest:hover,
+.btn-rest:focus {
+  opacity: 1;
+}
+
+/*===========================
+    01. Media Query CSS
+===========================*/
+@media (max-width: 575.98px) {
+  .rest {
+    margin-top: 30px;
+  }
+  .hero {
+    padding-bottom: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

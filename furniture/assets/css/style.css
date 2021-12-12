@@ -1,0 +1,880 @@
+/* ===========================
+Index Of css
+
+01. Elements CSS
+02. Header CSS
+03. Home CSS
+04. Popular Products CSS
+05. New Arrivals CSS
+06. Sofa Collection CSS
+07. FEATURED PRODUCTS CSS
+08. LASTEST BLOG CSS
+09. Clients CSS
+10. Footer CSS
+11. Media Query CSS
+
+========================== */
+/*===========================
+    01. Elements CSS
+===========================*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #a09e9c;
+  background: #fff;
+  text-transform: capitalize;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: #5f5b57;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 16px;
+  font-size: 500;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  color: #a09e9c;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+ul {
+  padding: 0;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  background: transparent;
+  border: 0;
+}
+
+button:focus, input:focus, textarea:focus {
+  outline: 0;
+}
+
+/*===========================
+    02. Header CSS
+===========================*/
+.navbar {
+  padding: 30px 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: 999;
+}
+
+.navbar.marginTop {
+  margin-top: 60px;
+}
+
+.navbar.scroll {
+  padding: 15px 0;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px #00000026;
+          box-shadow: 0 0 10px #00000026;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 500;
+  color: #616060;
+  margin: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: #616060;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  color: #e99c2e;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item {
+  margin: 0 20px;
+}
+
+.nav-bar-icons {
+  position: relative;
+  width: 150px;
+}
+
+.nav-bar-icons i {
+  font-size: 20px;
+  color: #616060;
+  opacity: .7;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.nav-bar-icons i:hover {
+  color: #e99c2e;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.num_products_cart {
+  position: absolute;
+  color: #fff;
+  font-size: 13px;
+  width: 21px;
+  height: 20px;
+  top: -10px;
+  right: -10px;
+  padding-left: 7px;
+  background: #e99c2e;
+  border-radius: 50px;
+}
+
+.search_products {
+  height: 0;
+  padding: 0;
+  background: #000;
+  overflow: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.search_products.active {
+  padding: 18px 0;
+  height: auto;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.search_products input {
+  width: 90%;
+  margin-left: 10px;
+  font-size: 13px;
+  color: #fff;
+  background: transparent;
+  border: 0;
+}
+
+.content_search {
+  position: relative;
+}
+
+.search_products .bi-x {
+  position: absolute;
+  font-size: 28px;
+  color: #fff;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  cursor: pointer;
+}
+
+.view-search-products {
+  top: 60px;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  -webkit-box-shadow: 0 10px 10px -10px #5f5f5f;
+          box-shadow: 0 10px 10px -10px #5f5f5f;
+}
+
+.search-container h3 {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.list-shop-cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 0px;
+  background-color: #f8f9fd;
+  z-index: 1111;
+  overflow-y: scroll;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.list-shop-cart.active {
+  width: 400px;
+  -webkit-box-shadow: 15px 0px 20px 10px #5f5b57;
+          box-shadow: 15px 0px 20px 10px #5f5b57;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.list-shop-cart h3 {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.list-shop-cart .bi-x-lg {
+  position: absolute;
+  top: 29px;
+  left: 10px;
+  font-size: 18px;
+  fill: #616060;
+  cursor: pointer;
+}
+
+.list-shopping {
+  padding: 40px 20px;
+}
+
+.list-shopping .item-Prd {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.list-shopping img {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.list-shopping .item-Prd h6 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+
+.list-shopping .item-Prd h6 span {
+  font-size: 14px;
+}
+
+.list-shopping .item-Prd .bi-trash {
+  position: absolute;
+  right: 20%;
+  font-size: 20px;
+  color: #000;
+  opacity: .3;
+  cursor: pointer;
+}
+
+.counter-item {
+  position: absolute;
+  right: 0;
+}
+
+.counter-item i {
+  display: block;
+  color: #e99c2e;
+  cursor: pointer;
+}
+
+.counter-item i.bi-chevron-up {
+  margin-bottom: -7px;
+}
+
+.counter-item i.bi-chevron-down {
+  margin-top: -7px;
+}
+
+.total-price {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 30px;
+}
+
+/*===========================
+    03. Home CSS
+===========================*/
+.home {
+  background-color: #f8f9fd;
+  padding: 180px 0 150px;
+}
+
+.info-product {
+  height: auto;
+  margin: auto;
+}
+
+.info-product h4 {
+  color: #998d80;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.info-product h2 {
+  font-size: 48px;
+  margin: 20px 0 30px;
+}
+
+.info-product p {
+  margin-bottom: 25px;
+}
+
+.info-product span:nth-of-type(1) {
+  position: relative;
+  color: #616060;
+  font-weight: 700;
+  margin: 0 10px 20px 30px;
+}
+
+.info-product span:nth-of-type(1)::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  top: 50%;
+  left: -30px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background-color: #616060;
+}
+
+.info-product span:nth-of-type(2) {
+  text-decoration: line-through;
+}
+
+.content-btn {
+  margin-top: 30px;
+}
+
+.content-btn button:nth-of-type(1) {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  padding: 17px 35px;
+  background: #e99c2e;
+  border: 1px solid #e99c2e;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.content-btn button:nth-of-type(1):hover {
+  color: #e99c2e;
+  background: transparent;
+  border: 1px solid #e99c2e;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.content-btn button:nth-of-type(2) {
+  font-size: 16px;
+  font-weight: 500;
+  color: #e99c2e;
+  padding: 17px 35px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.content-btn button:nth-of-type(2):hover {
+  border: 1px solid #e99c2e;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.carousel-indicators {
+  bottom: -100px;
+}
+
+.btn-slide {
+  width: 7px;
+  height: 11px;
+  border-radius: 50%;
+  background: #e99c2e;
+  margin: 0 5px;
+  opacity: .3;
+}
+
+.btn-slide.active {
+  opacity: 1;
+}
+
+.img-product {
+  padding-left: 30px;
+}
+
+/*===========================
+    04. Popular Products CSS
+===========================*/
+.popular_products {
+  margin-top: 80px;
+}
+
+.popular_product {
+  padding: 15px;
+}
+
+.body_p_product {
+  height: 100%;
+  padding: 0 15px 25px;
+  background-color: #f8f9fd;
+}
+
+.body_p_product:hover h3 {
+  color: #e99c2e;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.img1_p_product {
+  padding: 40px 40px 20px;
+}
+
+.info_p_product p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.img2_p_product {
+  width: 70%;
+  padding: 40px 0 0;
+  margin-right: 25px;
+}
+
+.info2_p_product {
+  padding: 40px 0 0;
+}
+
+.info2_p_product p {
+  margin: 15px 0;
+  font-size: 14px;
+  padding-right: 30px;
+}
+
+.info2_p_product h4 {
+  margin: 20px 0;
+}
+
+.info2_p_product h4 span {
+  color: #e99c2e;
+}
+
+.info2_p_product button {
+  padding: 8px 12px;
+  color: #616060;
+  border: 1px solid #616060;
+}
+
+.body_p_product:hover button {
+  color: #fff;
+  background: #616060;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.img3_p_product {
+  padding: 0 50px 20px;
+}
+
+/*===========================
+    05. New Arrivals CSS
+===========================*/
+.new_arrivals,
+.featured_products,
+.latest_blog {
+  padding: 90px 0 40px;
+}
+
+.new_arrivals h2,
+.featured_products h2,
+.latest_blog h2 {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.body_new_product {
+  margin-bottom: 40px;
+}
+
+.img_body_n_product {
+  position: relative;
+  height: 300px;
+  padding: 80px 50px;
+  background: #f8f9fd;
+}
+
+.img_body_n_product.sale_p::after,
+.img_body_n_product.sale_G_p::after {
+  content: "Sale";
+  position: absolute;
+  padding: 3px 15px;
+  font-size: 14px;
+  color: #fff;
+  background: #d8924c;
+  top: 15px;
+  right: 0;
+}
+
+.img_body_n_product.sale_G_p::after {
+  background: #47d93c;
+}
+
+.img_body_n_product img {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.overlay_new_product {
+  position: absolute;
+  background: #52525226;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.body_new_product h3 {
+  margin: 20px 0 10px;
+}
+
+.new_product_cart {
+  position: absolute;
+  padding: 5px 15px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #202020;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.new_product_cart * {
+  cursor: pointer;
+}
+
+.new_product_cart i {
+  font-size: 14px;
+  fill: #fff;
+  margin-right: 10px;
+}
+
+.new_product_cart span {
+  font-size: 12px;
+  color: #fff;
+}
+
+.body_new_product:hover .img_body_n_product img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.body_new_product:hover .overlay_new_product {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.body_new_product:hover h3,
+.featured_product:hover h3,
+.singal_blog:hover h3 {
+  color: #e99c2e;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.body_new_product:hover .new_product_cart {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.view-product {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #d8924cdb;
+  z-index: 1111;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.view-product.active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.view-product .img-view-product {
+  padding: 45px;
+  background-color: #f8f9fd;
+  border-radius: 15px;
+}
+
+.view-product .img-view-product .bi-x {
+  position: absolute;
+  font-size: 35px;
+  color: #000;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/*===========================
+    06. Sofa Collection CSS
+===========================*/
+.singal_sofa {
+  position: relative;
+  height: 85vh;
+}
+
+.singal_sofa .img_sofe_collection img {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -11;
+}
+
+.singal_sofa .img_sofe_collection .overmlay_sofa_coll {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 35%;
+  background: #3a3a3af1;
+  z-index: -1;
+}
+
+.info_sofe_collection * {
+  color: #fff;
+}
+
+.info_sofe_collection h2 {
+  margin-bottom: 30px;
+}
+
+.info_sofe_collection h4 {
+  margin: 10px 0 30px;
+}
+
+.info_sofe_collection h4 span {
+  color: #e99c2e;
+}
+
+.info_sofe_collection button {
+  padding: 12px 45px;
+  background: #e99c2e;
+}
+
+/*===========================
+    07. Featured Products CSS
+===========================*/
+.info_featured_product {
+  padding: 20px 0;
+}
+
+.info_featured_product .starts i {
+  font-size: 13px;
+  margin-right: 5px;
+  color: #e99c2e;
+}
+
+.info_featured_product .starts i.star-last {
+  color: #5f5b577e;
+}
+
+.starts span {
+  font-size: 12px;
+}
+
+.info_featured_product h3 {
+  margin: 10px 0;
+}
+
+/*===========================
+    08. LASTEST BLOG CSS
+===========================*/
+.singal_blog .img_blog {
+  position: relative;
+  overflow: hidden;
+}
+
+.singal_blog .img_blog img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.singal_blog:hover .img_blog img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.singal_blog:hover .img_blog .overlay_img_blog {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform: .5s;
+          transform: .5s;
+}
+
+.img_blog .overlay_img_blog {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: #00000070;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.info_blog h3 {
+  margin: 17px 0 12px;
+}
+
+.info_blog h5 {
+  opacity: .4;
+}
+
+.info_blog p {
+  font-size: 13px;
+  margin: 15px 0;
+}
+
+/*===========================
+    09. Clients CSS
+===========================*/
+.clients {
+  margin-top: 50px;
+}
+
+.clients {
+  padding: 70px 0;
+  background: #f8f9fd;
+}
+
+.clients img {
+  width: 100px;
+  margin: 20px 0;
+}
+
+/*===========================
+    10. Footer CSS
+===========================*/
+footer {
+  padding: 80px 0 0;
+}
+
+footer ul h3 {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+footer ul li {
+  margin-bottom: 15px;
+}
+
+footer ul li a {
+  font-weight: 500;
+  color: #a09e9c;
+}
+
+footer ul li input {
+  width: 80%;
+  font-size: 12px;
+  padding: 15px 10px;
+  border: none;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+}
+
+footer .copyright {
+  margin-top: 80px;
+  padding: 35px 0;
+  font-size: 12px;
+  text-align: center;
+  background: #f8f9fd;
+}
+
+/*===========================
+    11. Media Query CSS
+===========================*/
+@media (max-width: 991.98px) {
+  .navbar-expand-lg .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+  .img-product {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .info-product h2 {
+    font-size: 40px;
+  }
+  .popular_product,
+  .new_product,
+  .featured_product,
+  .singal_blog {
+    margin: auto;
+  }
+  .singal_blog {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .new_product,
+  .featured_product,
+  .singal_blog {
+    padding: 0 60px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

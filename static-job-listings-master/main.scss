@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap');
+$darkGreen: hsl(180, 29%, 50%);
+$darkCyan: hsl(180, 14%, 20%);
+body{
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+    background-color: hsl(180, 31%, 95%);
+}
+h2,
+h3,
+h4,
+h5,
+p
+{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+button{
+    border: 0;
+    background: none;
+    outline: 0;
+}
+.container{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.bg-header{
+    background-color: $darkGreen;
+    .container{
+        position: relative;
+        padding: 0;
+        button{
+            color: $darkGreen;
+            position: absolute;
+            right: 30px;
+            z-index: 999;
+        }
+    }
+}
+.filtering{
+    display: none;
+    align-items: center;
+    &.show{
+        display: flex;
+    }
+}
+.tag-filter{
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    width: 100%;
+    padding: 0 30px 16px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #fff;
+    z-index: 11;
+    div{
+        display: inline-block;
+        margin: 16px 20px 0 0;
+        background-color: $darkGreen;
+        border-radius: 5px;
+        &:hover{
+            background-color: $darkCyan;
+        }
+        span{
+            padding: 10px 12px;
+            color: $darkGreen;
+            font-size: .7rem;
+            font-weight: 700;
+            background-color: hsl(180, 31%, 95%);
+            border-radius: 5px 0 0 5px;
+        }
+        img{
+            width: 14px;
+            opacity: .8;
+            padding: 9px 0;
+            margin: 0 7px;
+            cursor: pointer;
+        }
+    }
+}
+.bg-header img{
+    width: 100%;
+}
+.singal-job{
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0px 25px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 5px 12px 30px rgba(123, 142, 142, 0.29);
+}
+.singal-job::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 7px;
+    left: -7px;
+    background-color: $darkGreen;
+    border-radius: 7px 0 0 7px;
+}
+.desc-job{
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+.desc-job > img{
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.info-job{
+    display: flex;
+    flex-direction: column;
+}
+.info-job h4{
+    font-size: 1rem;
+    font-weight: 700;
+    color: $darkGreen;
+}
+.head-info-job{
+    display: flex;
+    align-items: center;
+}
+.head-info-job span{
+    font-size: .7rem;
+    margin-left: 15px;
+    color: #fff;
+    padding: 3px 10px 0px;
+    border-radius: 20px;
+}
+.head-info-job span:nth-child(2){
+    background-color: $darkGreen;
+}
+.head-info-job span:nth-child(3){
+    background-color: $darkCyan;
+}
+.info-job h3{
+    color: $darkCyan;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    &:hover{
+        color: $darkGreen;
+        cursor: pointer;
+        transition: .5s;
+    }
+}
+.timePlace-job{
+    font-size: .9rem;
+    color: hsl(180, 8%, 52%);
+}
+.timePlace-job span{
+    margin: 0 10px;
+}
+.skills-job{
+    font-size: .8rem;
+    font-weight: 700;
+}
+.skills-job a{
+    float: right;
+    text-decoration: none;
+    margin: 8px 0 8px 16px;
+    color: $darkGreen;
+    padding: 8px 12px;
+    background-color: hsl(180, 31%, 95%);
+    border-radius: 5px;
+    &:hover{
+        color: #fff;
+        background-color: $darkGreen;
+        transition: .5s;
+    }
+}
+
+@media (max-width: 992px){
+    
+    .container > .row{
+        padding: 0 20px;
+    }
+    .desc-job{
+        padding-left: 0;
+    }
+    .skills-job{
+        padding: 0;
+        padding-bottom: 15px;
+        border-top: 1px solid hsl(180, 6%, 75%);
+    }
+    .skills-job a{
+        float: left;
+        margin: 15px 15px 0 0;
+    }
+}
+@media (max-width: 767.98px){
+    .singal-job{
+        margin: 30px 0;
+    }
+    .desc-job{
+        padding-top: 50px;
+    }
+    .desc-job > img{
+        position: absolute;
+        top: 0;
+        transform: translateY(-50%);
+        width: 70px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

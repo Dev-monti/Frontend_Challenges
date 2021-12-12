@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="main.css">
+    <title>Promorore App</title>
+</head>
+<body>
+    <div class="main">
+        <h2>POMODORO</h2>
+        <div class="break-mode">
+            <button class="btn-pomodora active" type_target="pomodoro">pomodoro</button>
+            <button type_target="shortbreak">Short break</button>
+            <button type_target="longbreak">long break</button>
+        </div>
+        <div class="progress">
+            <svg class="progress-ring" width="272" height="272" aria-label="pomodoro clock">
+                <circle class="progress__circle" stroke="white" stroke-width="8" r="120" cx="136"
+                  cy="136" sd= "750" />
+            </svg>      
+            <div class="counter">
+                <h2 class="counter_ui">25 : 00</h2>
+                <button class="btn-start" data_state="start">Start</button> 
+            </div>
+        </div>
+        <div class="setting">
+            <img src="images/icon-settings.svg" class="setting_icon" alt="">
+            <div class="form-setting">
+                <div class="head-SF">
+                    <h3>Settings</h3>
+                    <img src="images/icon-close.svg" class="close-form" alt="">
+                </div>
+                <div class="inputs-Sf">
+                    <div class="pomodoro-input">
+                        <label for="">pomodoro</label>
+                        <input id="pmd_inpt" class="inpt-SF" name="pomodoro" type="number">
+                    </div>
+                    <div class="shortbreak-input">
+                        <label for="">short break</label>
+                        <input id="sh_br_inpt" class="inpt-SF" name="shortbreak" type="number">
+                    </div>
+                    <div class="longbreak-input">
+                        <label for="">long break</label>
+                        <input id="ln_br_inpt" class="inpt-SF" name="longbreak" type="number">
+                    </div>
+                </div>
+                <div class="colors">
+                    <p>COLOR</p>
+                    <ul>
+                        <li data_Color= "#f87070"></li>
+                        <li data_Color= "#70f3f8"></li>
+                        <li data_Color= "#d881f8"></li>
+                    </ul>
+                </div>
+                <button class="btn_apply">Apply</button>
+            </div>
+        </div>
+        <audio src="images/Alarm06.wav" type="audio/wav" class="audio"></audio>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

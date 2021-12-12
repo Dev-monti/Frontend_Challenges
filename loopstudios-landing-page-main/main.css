@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2,
+h4,
+p {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.home {
+  height: 100vh;
+  background-image: url("images/desktop/image-hero.jpg");
+}
+
+.home-sm {
+  background: #000;
+}
+
+.home-sm .content-head-page {
+  display: none;
+}
+
+.home nav {
+  height: 17vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul li {
+  display: inline-block;
+  margin-left: 20px;
+  font-family: 'Alata', sans-serif;
+}
+
+ul li a {
+  position: relative;
+  color: #fff;
+  font-family: 'Alata', sans-serif;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+nav ul li a::before {
+  position: absolute;
+  content: "";
+  top: 120%;
+  width: 0;
+  height: 2px;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  background-color: #fff;
+  -webkit-transition: .5;
+  transition: .5;
+}
+
+nav ul li:hover ::before {
+  width: 50%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+nav ul.links-sm {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+nav ul.links-sm li {
+  display: block;
+  margin: 10px 0;
+}
+
+nav i {
+  display: none;
+  cursor: pointer;
+}
+
+.content-head-page {
+  height: 83vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-head-page p {
+  font-size: 50px;
+  font-weight: 300;
+  color: #fff;
+  padding: 25px 50px;
+  border: 2px solid #fff;
+}
+
+.virtual-reality,
+.creations {
+  margin: 100px 0;
+}
+
+.virtual-reality .row {
+  position: relative;
+}
+
+.vr-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 70px 0 0 70px;
+  background-color: #fff;
+}
+
+.vr-text h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.head-creations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.head-creations h2 {
+  font-size: 40px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.creations button {
+  padding: 7px 20px;
+  background: none;
+  border: 1px solid #000;
+}
+
+.btn-seeall-sm {
+  display: none;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.craetion {
+  position: relative;
+  padding: 15px;
+}
+
+.craetion-body {
+  position: relative;
+}
+
+.overflow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.27);
+}
+
+.craetion h4 {
+  position: absolute;
+  font-weight: 300;
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  left: 40px;
+  bottom: 30px;
+  z-index: 999;
+}
+
+footer {
+  padding: 40px 0;
+  background-color: #000;
+}
+
+a.logo-footer {
+  display: inline-block;
+}
+
+footer ul li {
+  margin: 30px 20px 0 0;
+}
+
+.section-footer div {
+  text-align: right;
+}
+
+.section-footer div i {
+  display: inline-block;
+  width: 20px;
+  margin-left: 20px;
+}
+
+.section-footer div p {
+  color: #6d6d6d;
+  margin-top: 40px;
+}
+
+@media (max-width: 1199.98px) {
+  .vr-text {
+    position: relative;
+  }
+  .virtual-reality .row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .vr-text {
+    text-align: center;
+    padding: 70px 30px 0 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  nav ul {
+    display: none;
+  }
+  nav i {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 500px) {
+  .vr-text h3 {
+    font-size: 30px;
+  }
+  .head-creations {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .head-creations button {
+    display: none;
+  }
+  .btn-seeall-sm {
+    display: block;
+  }
+  footer,
+  .section-footer div {
+    text-align: center;
+  }
+  .section-footer div {
+    margin-top: 30px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

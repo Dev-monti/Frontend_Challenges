@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap');
+body{
+    font-size: 12px;
+    font-family: 'Spartan', sans-serif;
+    padding: 0;
+    margin: 0;
+    --Dark_Gray: hsl(0, 0%, 63%);
+}
+h2,
+h3,
+h4,
+ul,
+li,
+p{
+    margin: 0;
+    padding: 0;
+}
+button{
+    border: 0;
+    background: none;
+    outline: 0;
+    cursor: pointer;
+}
+
+.hero{
+    display: grid;
+    grid-template-rows: 75vh 35vh;
+}
+.section__one{
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+.main{
+    position: relative;
+    padding: 30px 0 0 30px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: .8rem;
+}
+nav ul li a.logo{
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-top: -10px;
+}
+.main img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999;
+}
+.main__desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 160px 0 100px;
+    position: relative;
+}
+.btns-arrows{
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.btns-arrows div{
+    padding: 22px 37px;
+    background-color: #000;
+    cursor: pointer;
+    transition: .5s;
+}
+.btns-arrows div:hover{
+    background-color: #000000c7;
+}
+.body_mn_dsc{
+    display: flex;
+    flex-direction: column;
+}
+.body_mn_dsc h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.body_mn_dsc p,
+.about__our p{
+    color: var(--Dark_Gray);
+    font-size: .7rem;
+    line-height: 1.4rem;
+}
+.body_mn_dsc p{
+    margin: 30px 0;
+}
+.body_mn_dsc button{
+    color: var(--Dark_Gray);
+    letter-spacing: 8px;
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+}
+.body_mn_dsc button img{
+    width: 40px;
+    margin-left: 20px;
+}
+.section__two{
+    display: grid;
+    grid-template-columns: 32% 36% 32%;
+}
+.about__our{
+    padding: 50px 40px;
+}
+.about__our h3{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: .8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.img-about-dark{
+    background-image: url("./images/image-about-dark.jpg");
+}
+.img-about-light{
+    background-image: url("./images/image-about-light.jpg");
+}
+@media (max-width: 1200px){
+    .main__desc{
+        padding: 0 20px;
+    }
+}
+@media (max-width: 992px){
+    .btns-arrows{
+        left: 100%;
+        transform: translateX(-110%);
+        bottom: 20px;
+    }
+    .hero{
+        grid-template-rows: 100%;
+    }
+    .section__one{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .section__two{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+@media (max-width: 767px){
+    .hero{
+        grid-template-rows: 1fr;
+    }
+    .section__one{
+        grid-template-rows: 1fr 1fr;
+    }
+    .main__desc{
+        padding: 60px 20px;
+    }
+    .body_mn_dsc h2{
+        font-size: 1.7rem;
+    }
+    .btns-arrows div{
+        padding: 10px 20px;
+    }
+}

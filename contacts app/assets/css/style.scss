@@ -1,0 +1,262 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+$cyan : #0dcaf0;
+$text-color: #363a3f;
+
+h3,h4,h5,p,span{
+    color: $text-color;
+}
+ul{
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+input,
+button,
+textarea{
+    border: 0;
+}
+input:focus,
+button:focus,
+textarea{
+    outline: 0;
+}
+
+header{
+    padding: 30px 0;
+    margin-bottom: 25px;
+    background-color: $cyan;
+}
+.search-fullname{
+    width: 100%;
+    padding: 7px 5px;
+    border-radius: 5px;
+}
+.btn-head{
+    background: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+.btn-new{
+    margin: 0 10px 0 40px;
+}
+.btn-list span{
+    margin-left: 10px;
+    font-size: 16px;
+    color: #565e64;
+}
+.btn-head.active{
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 0px 12px;
+}
+
+.form-info,
+.list-contact{
+    height: 0;
+    transform: scaleY(0);
+}
+.form-info.active,
+.list-contact.active{
+    padding: 25px 20px;
+    height: auto;
+    background-color: #c2d6da14;
+    border: 2px solid #37515636;
+    border-radius: 0 5px 5px;
+    transform: scaleY(1);
+    transition: all .5s;
+}
+form{
+    padding-top: 15px;
+}
+form label,
+form input,
+form textarea{
+    width: 100%;
+}
+form label{
+    margin: 15px 0 5px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #60676e;
+}
+form input,
+form textarea{
+    padding: 5px;
+    border: 1px solid #37515636;
+    border-radius: 3px;
+}
+form input{
+    position: relative;
+}
+form span{
+    font-size: 12px;
+    color: red;
+}
+form input:focus,
+form textarea:focus{
+    border: 2px solid $cyan;
+}
+form .btn{
+    width: auto;
+    margin-top: 15px;
+    padding: 6px 20px;
+}
+.modal-add .alert{
+    display: inline-block;
+    margin: 5px 0 0;
+}
+
+.group-items {
+    margin-top: 25px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #363a3f12;
+    border-radius: 5px;
+}
+.singal-person{
+    display: flex;
+    padding: 10px 0px;
+}
+.singal-person .name-person span,
+.content-view .content-vw-name span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    background: #0dcaf0;
+    border-radius: 50%;
+}
+.singal-person .name-person h4{
+    font-size: 18px;
+    margin: 0 0 0 15px;
+}
+.singal-person h5{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+.singal-person .bi-three-dots-vertical{
+    font-size: 20px;
+    cursor: pointer;
+}
+.singal-person .dots{
+    display: none;
+}
+.singal-person .dots.view{
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    padding: 10px 0px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px #363a3f50;
+}
+.singal-person .dots li{
+    display: flex;
+    align-items: center;
+    padding: 5px 60px 5px 20px;
+    color: #7c838a;
+    cursor: pointer;
+}
+.singal-person .dots li:hover{
+    background: #7c838a23;
+}
+.singal-person .dots li i{
+    font-size: 13px;
+    margin-right: 20px;
+}
+
+.view-contact,
+.edit-contact{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0000006e;
+    transition: .5s;
+}
+.view-contact .content-view,
+.edit-contact .content-edit{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0px 180px 0px 20px;
+    background-color: #fff;
+    border-radius: 25px;
+}
+.content-view ul li:first-of-type{
+    font-size: 25px;
+    color: #000;
+}
+.content-view .bi-x-lg{
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    cursor: pointer;
+}
+.content-view ul li{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.747);
+    margin-top: 15px;
+}
+.content-view ul li i{
+    font-size: 20px;
+    color: #000;
+    margin-right: 15px;
+}
+
+.edit-contact .content-edit{
+    min-width: 700px;
+    padding: 20px 10px;
+}
+@media (max-width: 992px){
+    .edit-contact .content-edit{
+        min-width: 250px;
+    }
+}
+.content-edit label{
+    font-size: 15px;
+    color: #4c5257;
+}
+.content-edit input,
+.content-edit textarea{
+    display: block;
+    min-width: 300px;
+    margin: 5px 0 15px;
+    padding: 3px 5px;
+    border: 1px solid #565e645e;
+    border-radius: 5px;
+}
+.content-edit button{
+    margin: 5px 10px 5px 0;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 3px 10px;
+    background-color: $cyan;
+    border-radius: 8px;
+}
+.content-edit button:nth-of-type(2){
+    background-color: #565e64;
+}
+
+@media (max-width: 768px){
+    .search-fullname{
+        margin-top: 25px;
+    }
+    .singal-person h5:first-of-type{
+        display: none;
+    }
+    .list-contact.active{
+        padding: 25px 10px;
+    }
+}

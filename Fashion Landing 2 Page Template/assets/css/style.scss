@@ -1,0 +1,645 @@
+$textColor : #535353;
+
+// ELEMENT PAGE
+body{
+    font-family: 'Roboto', sans-serif;
+}
+body *{
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    font-size: 40px;
+}
+h6{
+    text-transform: capitalize;
+}
+img{
+    width: 100%;
+}
+button{
+    font-size: 16px;
+    color: #fff;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 30px;
+}
+button:focus,input:focus,textarea:focus{
+    outline: 0;
+}
+// ***************************** START PAGE HOME ***************************** //
+
+// START HEADER
+header{
+    position: fixed;
+    width: 100%;
+    height: 77px;
+    top: 0;
+    background-color: #0000009e;
+    padding: 20px 0;
+    z-index: 111;
+}
+header.active{
+    height: 57px;
+    padding: 10px 0;
+    background-color: #1f1f1f;
+    transition: .5s linear;
+}
+nav{
+    display: flex;
+}
+.logo{
+    margin-right: 35px;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.logo:hover{
+    color: #fff;
+}
+.nav-collapse{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-collapse ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.nav-collapse ul li{
+    margin: 0 10px;
+}
+.nav-collapse ul li a,.navbar-toggler ul li a{
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.searchop input{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 20px;
+    padding: 4px 7px;
+}
+.searchop i img{
+    width: 35px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.icon-bar{
+    display: none;
+    padding: 0;
+    border: 0;
+}
+.navbar-toggler{
+    display: none;
+    position: relative;
+    width: 100%;
+    background-color: #0000009e;
+    margin-top: 20px;
+    transition: .5s;
+}
+header .navbar-toggler ul{
+    padding: 0 5px;
+    margin: 0;
+}
+.navbar-toggler ul li{
+    padding: 0;
+    margin: 15px 0;
+}
+// END HEADER
+
+// START SECTION HOME
+.home{
+    position: relative;
+    height: 100vh;
+    background-image: url('../images/hero-background.png');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.home .row{
+    justify-content: space-around;
+}
+.back-black{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: #00000094;
+}
+.home .content{
+    position: relative;
+    padding: 0 45px;
+    z-index: 11;
+    text-align: center;
+}
+h1{
+    font-size: 41px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.home .content p{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.514);
+    text-transform: capitalize;
+    margin: 7px 0 35px;
+}
+// END SECTION HOME
+
+// START SECTION LAST FASHION
+.style-women,.style-man{
+    position: relative;
+    height: 380px;
+    background-size: cover;
+    background-position: right;
+}
+.style-women:hover,.style-man:hover{
+    background-position-x: 10px;
+    transition: .5s;
+}
+.style-women{
+    background-image: url("../images/girl-1828536_1920.png");
+}
+.style-man{
+    background-image: url("../images/OCRUY90.png");
+}
+.last-style .content{
+    position: relative;
+    margin: 255px 0 0 10%;
+    z-index: 11;
+}
+.last-style .content h2{
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+// END SECTION LAST FASHION
+
+// START SECTION PRODUCTS
+.products{
+    margin-top: 50px;
+}
+.fashion{
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+.fashion:hover{
+    transform: scale(1.05 , 1.05);
+    transition: .5s linear;
+}
+.body-fashion{
+    border: 1px solid #95989A;
+    border-radius: 10px;
+}
+.info-fashion{
+    text-align: center;
+    padding: 15px 0 25px;
+}
+.info-fashion h4{
+    font-size: 14px;
+    color: $textColor;
+}
+.info-fashion h3{
+    color: #212529;
+}
+.price-fashion{
+    font-size: 17px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+.info-fashion button{
+    color: $textColor;
+    border: 1px solid $textColor;
+    text-transform: capitalize;
+}
+// END SECTION PRODUCTS
+
+// START SECTION CRAZY SALE
+.crazy-sale{
+    margin-top: 30px;
+    padding: 40px 0;
+    background-color: #434343;
+}
+.crazy-sale .head{
+    text-align: center;
+} 
+.crazy-sale .head h2{
+    font-size: 35px;
+    color: #95989A;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    letter-spacing: 1px;
+}
+.times-ends span{
+    position: relative;
+    font-size: 30px;
+    padding: 10px 15px;
+    margin: 0 15px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.times-ends span::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 5px;
+    font-size: 14px;
+    color: #95989A;
+    text-transform: uppercase;
+}
+.times-ends span.days::before{
+    content: "days";
+}
+.times-ends span.hours::before{
+    content: "hours";
+}
+.times-ends span.minutes::before{
+    content: "minutes";
+}
+.times-ends span.seconds::before{
+    content: "seconds";
+}
+.crazy-sale .groups_product{
+    position: relative;
+    margin-top: 120px;
+}
+.crazy-sale .groups_product .group_product{
+    height: 0;
+    transform: scaleX(0);
+    overflow: hidden;
+}
+.crazy-sale .groups_product .group_product.active{
+    height: auto;
+    overflow: hidden;
+    transform: scaleX(1);
+    transition: 1s;
+}
+.crazy-sale .fashion .body-fashion{
+    border: 0;
+}
+.crazy-sale .fashion .info-fashion{
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+}
+.crazy-sale .fashion .info-fashion h3{
+    display: inline-block;
+}
+.crazy-sale .fashion .info-fashion h3.price-fashion{
+    text-decoration: line-through;
+}
+.info-fashion h3.price-new{
+    font-size: 20px;
+    color: #ff0000;
+    margin-right: 10px;
+}
+.arrow-back{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: -60px;
+    transform: translateY(-50%);
+    padding: 0;
+}
+.arrow-back i img{
+    width: 16px;
+    cursor: pointer;
+}
+.arrow-back i:nth-child(2){
+    position: absolute;
+    right: -120px;
+}
+// END SECTION CRAZY SALE
+
+// START SECTION BRANDS
+.brands{
+    margin: 80px 0;
+}
+.brand{
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.brands h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+.brands .row{
+    margin-top: 50px;
+}
+.body-brand{
+    position: relative;
+    padding: 0 5px;
+}
+.brand .back-black{
+    border-radius: 10px;
+}
+// START SECTION BRANDS
+
+// START FOOTER
+footer{
+    padding: 50px 0 20px; 
+    background-color: #1f1f1f;
+}
+footer .info-site p{
+    margin-top: 25px;
+    font-size: 13px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+}
+footer ul h5{
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+footer .instgram img{
+    width: 80px;
+    margin: 0 5px 5px 0;
+}
+.menu{
+    padding-left: 50px;
+}
+.menu li{
+    margin-bottom: 9px;
+}
+.menu li a{
+    font-size: 13px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.Copyright{
+    font-size: 13px;
+    color: rgb(185, 185, 185);
+    letter-spacing: 1px;
+    margin-top: 50px;
+    text-align: center;
+}
+// END FOOTER
+// ***************************** END PAGE HOME ***************************** //
+
+// ***************************** START PAGE PRODUCT ***************************** //
+// START SECTION PRODUCT
+.product{
+    margin: 120px 0 60px;
+}
+.info-product h2{
+    text-transform: capitalize;
+}
+.info-product h6{
+    margin: 5px 0 15px;
+} 
+.info-product .starts i img{
+    width: 24px;
+    margin-right: 5px;
+}
+.info-product p{
+    font-size: 15px;
+    margin: 10px 0 20px;
+}
+.info-product ul{
+    padding: 0;
+    margin-bottom: 15px;
+}
+.info-product ul:nth-of-type(2){
+    display: inline-block;
+}
+.info-product ul h6{
+    margin-bottom: 10px;
+}
+.info-product ul li{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #95989A;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #95989A;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.info-product button{
+    margin-left: 90px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: $textColor;
+}
+.img-product{
+    padding: 0 5px 14px;
+}
+.img-product img{
+    height: 378px;
+}
+.photo-product .row{
+    margin: 0;
+}
+.otherimg-prd{
+    padding: 0 7px;
+    cursor: pointer;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #8b8b8b;
+    margin-bottom: 50px;
+}
+// EBD SECTION PRODUCT
+
+// START SECTION OTHER PAGE PRODUCT
+.comments h4,.other-products h4{
+    font-size: 25px;
+    margin-bottom: 5pxpx;
+}
+.comments input,textarea{
+    width: 100%;
+    padding: 7px 10px;
+    font-size: 14px;
+    background-color: transparent;
+    border: 1px solid $textColor;
+    border-radius: 20px;
+    margin-top: 15px;
+    opacity: .7;
+}
+.imoge img{
+    width: 25px;
+    margin-right: 10px;
+}
+.comments button{
+    color: $textColor;
+    margin-top: 20px;
+    padding: 5px 30px;
+    border: 1px solid $textColor;
+    opacity: .7;
+}
+.group-comment{
+    margin-top: 70px;
+}
+.comment-p{
+    margin-top: 20px;
+}
+.comment-p h4{
+    font-size: 18px;
+    margin-top: 15px;
+    text-transform: capitalize;
+    color: #535353;
+}
+.img-user{
+    width: 50px;
+}
+.other-products .row{
+    margin-top: 38px;
+}
+.other-products .fashion h4{
+    font-size: 17px;
+}
+// END SECTION OTHER PAGE PRODUCT
+// ***************************** END PAGE PRODUCT ***************************** //
+
+// ***************************** START PAGE CART ***************************** //
+// START SECTION TABLE
+.cart{
+    margin-top: 150px;
+    opacity: .4;
+}
+.cart h4{
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.info-prd-user{
+    margin-top: 30px;
+    border: 1px solid $textColor;
+    border-radius: 15px;
+}
+table{
+    width: 100%;
+}
+thead{
+    color: #1b1b1b;
+    border-bottom: 1px solid $textColor;
+}
+thead td{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+tbody tr{
+    border-bottom: 1px solid $textColor;
+}
+tbody tr:nth-last-of-type(1){
+    border-bottom: 0;
+}
+td{
+    height: 60px;
+    font-size: 15px;
+    text-align: center;
+    text-transform: capitalize;
+    border-right: 1px solid $textColor;
+}
+td:nth-last-of-type(1){
+    border-right: 0;
+}
+.cart button{
+    font-size: 17px;
+    color: #fff;
+    background-color: $textColor;
+    margin: 30px 10px 0 0;
+}
+// END SECTION TABLE
+
+// START SECTION OTHER PRODUCT
+.dont-miss{
+    margin: 50px 0;
+}
+.dont-miss h4{
+    margin-bottom: 20px;
+}
+// END SECTION OTHER PRODUCT
+
+// ***************************** END PAGE CART ***************************** //
+
+// MEDIA QUERY
+@media (max-width: 1200px) {
+    nav{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-collapse{
+        display: none;
+    }
+    .icon-bar{
+        display: inline-block;
+    }
+    .navbar-toggler{
+        display: inline-block;
+    }
+    .arrow-back{
+        display: none;
+    }
+    .info-product button{
+        margin-left: 40px;
+    }
+    .other-products h4,.other-products .fashion{
+        padding-left: 70px;
+    }
+}
+@media (max-width: 992px) {
+    .menu{
+        padding-left: 10px;
+    }
+    .img-product{
+        margin-top: 30px;
+    }
+    .other-products{
+        margin-top: 40px;
+        padding: 0 70px;
+    }
+    .other-products h4{
+        padding: 0;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .home{
+        padding-top: 180px;
+    }
+    h1{
+        font-size: 31px;
+    }
+    .other-products{
+        padding: 0 30px;
+    }
+}
+@media (max-width: 576px) {
+    h1{
+        font-size: 22px;
+    }
+    .info-product button{
+        margin-left: 0px;
+    }
+    .photo-product{
+        margin-top: 30px;
+    }
+    .other-products h4,.other-products .fashion{
+        padding-left: 0px;
+    }
+    footer .row ul{
+        margin-top: 20px;
+    }
+}

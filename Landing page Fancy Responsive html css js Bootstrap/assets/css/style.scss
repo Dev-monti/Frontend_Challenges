@@ -1,0 +1,808 @@
+/* ===========================
+Index Of css
+
+01. Elements CSS
+02. Header CSS
+03. Home CSS
+04. Features CSS
+05. About Us CSS
+06. Portfolio CSS
+07. Process CSS
+08. Team CSS
+09. Client CSS
+10. Works View CSS
+11. Contact CSS
+12. Subscribe Email CSS
+13. Footer CSS
+14. Media Query CSS
+
+========================== */
+
+/*===========================
+    01. Elements CSS
+===========================*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+$blueColor : #3763EB;
+body{
+    font-family: 'Poppins', sans-serif;
+}
+body * {
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: 600;
+    color: #051441;
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size: 30px;
+}
+h4{
+    font-size: 25px;
+}
+h5{
+    font-size: 20px;
+}
+h6{
+    font-size: 16px;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #6A7C92;
+}
+li{
+    list-style: none;
+}
+button:focus,
+input:focus,
+textarea:focus{
+    outline: 0;
+}
+img{
+    width: 100%;
+}
+.Btn{
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 50px;
+    color: #fff;
+    background: linear-gradient(to left, #3763eb 0%, #6f58e8 50.39%, #3763eb 100%);
+    background-size: 200% auto;
+    border: none;
+    cursor: pointer;
+}
+.Btn:hover{
+    background-position: right center;
+    box-shadow: 0px 0px 30px rgba(46, 87, 217, 0.45);
+}
+
+/*===========================
+    02. Header CSS
+===========================*/
+.navbar{
+    padding: 20px 0;
+    background-color: #fff;
+    transition: .3s;
+}
+.navbar.scroll{
+    padding: 7px 0;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
+    transition: .5s;
+}
+.navbar-brand{
+    max-width: 150px;
+}
+.navbar-collapse{
+    width: auto;
+}
+.navbar-nav li{
+    margin: 10px;
+}
+.navbar-light .navbar-nav .nav-link{
+    font-size: 16px;
+    color: #051441;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: $blueColor;
+}
+.collapse form button{
+    padding: 10px 30px;
+}
+/*===========================
+    03. Home CSS
+===========================*/
+.home .carousel-inner{
+    position: relative;
+    height: 100vh;
+    // margin-top: 50px;
+    margin-top: 90px;
+}
+.overlay::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(111, 88, 232, 0.6) 0%, #3763eb 100%);
+}
+.carousel-item{
+    height: 100%;
+} 
+.carousel-item img{
+    height: 100%;
+}
+.carousel-control-prev,.carousel-control-next{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.carousel-control-prev{
+    left: 50px;
+}
+.carousel-control-next{
+    right: 50px;
+}
+.carousel-control-prev-icon,.carousel-control-next-icon{
+    width: 25px;
+}
+.carousel-caption{
+    padding: 0 100px;
+    top: 60%;
+    transform: translate(0,-50%);
+}
+.carousel-caption h2{
+    color: #fff;
+    margin-bottom: 30px;
+}
+.carousel-caption p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #fff;
+}
+.carousel-caption button{
+    margin-top: 30px;
+    padding: 14px 40px;
+    font-size: 18px;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 50px;
+}
+.carousel-caption button:hover{
+    color: $blueColor;
+    background-color: #fff;
+}
+/*===========================
+    04. Features CSS
+===========================*/
+.features,
+.services{
+    padding-top: 100px;
+}
+.features .container .row,
+.services .container .row{
+    margin-top: 50px;
+}
+.head-features span,
+.head-services span,
+.head-process span,
+.head-teams span,
+.head-form span{
+    font-size: 25px;
+    font-weight: 700;
+    color: $blueColor;
+    margin-bottom: 10px;
+}
+.head-features h2,
+.head-services h2,
+.process h2,
+.head-teams h2,
+.head-form h2{
+    margin: 5px 0 15px;
+}
+.feature,
+.service{
+    margin-bottom: 35px;
+    padding: 0 15px;
+}
+.body-feature,
+.body-service{
+    padding: 40px 30px;
+    border: 1px solid #F4EEFB;
+    border-radius: 10px;
+    transition: all .3s;
+}
+.body-feature:hover,
+.body-service:hover,
+.info-contact:hover,
+.form-contact:hover{
+    box-shadow: 0px 0px 30px rgba(215, 224, 252, 0.45);
+}
+.body-feature:hover .f-icon,
+.body-service:hover .f-icon,
+.work-process:hover .p-icon{
+    background: linear-gradient(to bottom, #3763eb 0%, #6f58e8 50.39%);
+    border: 2px solid transparent;
+}
+.body-feature:hover .f-icon svg,
+.body-service:hover .f-icon svg,
+.work-process:hover .p-icon svg{
+    fill: #fff;
+}
+.body-feature .f-icon,
+.body-service .f-icon{
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid $blueColor;
+    border-radius: 50px;
+}
+.body-feature .f-icon svg,
+.body-service .f-icon svg{
+    width: 40px;
+    height: 40px;
+    fill: $blueColor;
+}
+.body-feature h4,
+.body-service h4{
+    margin: 15px 0;
+}
+/*===========================
+    05. About Us CSS
+===========================*/
+.about_us{
+    width: 100%;
+    margin-top: 70px;
+    padding: 100px 0;
+    background-color: #EFF2F9;
+}
+.about_us .row{
+    margin: 0;
+}
+.about-img{
+    position: relative;
+    padding: 0 40px 0 0;
+}
+.about-img .about-experience{
+    position: absolute;
+    padding: 40px 20px;
+    right: 10px;
+    bottom: 20px;
+    background: linear-gradient(to top left, #3763eb 0%, #6f58e8 100%);
+    border: 5px solid #eff2f9;
+    border-radius: 27px;
+}
+.about-experience h3{
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.about-info{
+    margin-top: 60px;
+}
+.about-info span{
+    font-size: 25px;
+    font-weight: 700;
+    color: $blueColor;
+}
+.about-info h2{
+    margin: 20px 0;
+}
+.about-experience p{
+    color: #fff;
+}
+.numbers-about{
+    display: flex;
+    margin: 35px 0;
+}
+.numbers-about span{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.numbers-about p{
+    margin-top: 15px;
+}
+/*===========================
+    06. Portfolio CSS
+===========================*/
+.portfolio{
+    padding-top: 100px;
+}
+.portfolio span{
+    font-size: 25px;
+    font-weight: 700;
+    color: $blueColor;
+}
+.portfolio-btns{
+    margin-top: 50px;
+}
+.portfolio-btns button{
+    display: inline-block;
+    padding: 10px 24px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    background: #EFF2F9;
+    color: #051441;
+    border-radius: 50px;
+    margin: 10px 28px 0 0;
+}
+.portfolio-btns button.active,.portfolio-btns button:hover{
+    color: #fff;
+    background: linear-gradient(to right, #3763eb 0%, #6f58e8 100%);
+    transition: .3s;
+}
+.imgs-portfolio{
+    margin-top: 60px;
+}
+.imgs-portfolio .img-portfolio{
+    position: relative;
+    padding: 0 15px;
+    margin-bottom: 30px;
+    transition: .5s;
+}
+.imgs-portfolio .img-portfolio.hide{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.imgs-portfolio div img{
+    border-radius: 20px;
+}
+.portf-overlay{
+    position: absolute;
+    padding: 0 30px;
+    top: 0;
+    left: 15px;
+    right: 15px;
+    height: 100%;
+    background: linear-gradient(rgba(55,99,235,0.94) 0%,rgba(111,88,232,0.94) 100%);
+    border-radius: 20px;
+    z-index: 1;
+    transform: scale(0);
+    transition: .5;
+}
+.imgs-portfolio .img-portfolio:hover .portf-overlay{
+    transform: scale(1);
+    transition: .5s;
+}
+.portf-overlay .overlay-content h4{
+    color: #fff;
+}
+.portf-overlay .overlay-content p{
+    margin: 25px 0;
+    color: #fff;
+}
+.portf-overlay .overlay-content button{
+    padding: 7px 25px;
+    font-size: 20px;
+    color: #fff;
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 35px;
+    transition: .5s;
+}
+.portf-overlay .overlay-content button:hover{
+    color: $blueColor;
+    background: #fff;
+}
+/*===========================
+    07. Process CSS
+===========================*/
+.process{
+    padding-top: 100px;
+}
+.works-process{
+    position: relative;
+}
+.works-process::before{
+    content: "";
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    transform: translate(-50%);
+    background-color: #F4EEFB;
+    z-index: -1;
+}
+.work-process{
+    margin-top: 60px;
+}
+.work-process h4{
+    margin-bottom: 10px;
+}
+.text-right{
+    text-align: end;
+}
+.icon-w-process{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.p-icon{
+    width: 60px;
+    height: 60px;
+    padding: 17px;
+    background-color: #fff;
+    border: 1px solid #F4EEFB;
+    border-radius: 50px;
+}
+.p-icon svg{
+    width: 26px;
+    height: 26px;
+    fill: $blueColor;
+    transition: .3s;
+}
+/*===========================
+    08. Team CSS
+===========================*/
+.teams{
+    margin-top: 70px;
+    padding-top: 120px;
+    position: relative;
+    width: 100%;
+}
+.teams::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #EFF2F9;
+    clip-path: polygon(0 0, 100% 12%, 100% 75%, 0 95%);
+    z-index: -1;
+}
+.G-team{
+    margin-top: 50px;
+}
+.G-team .team{
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+.G-team .team .body-team{
+    border: 1px solid #F4EEFB;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.social-media-team svg{
+    width: 25px;
+    height: 25px;
+    fill: #fff;
+}
+.img-team{
+    position: relative;
+}
+.img-team .social-media-team{
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    padding: 15px 30px;
+    background: transparent;
+    z-index: 11;
+}
+.body-team:hover .img-team .social-media-team{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    background: linear-gradient(to top, #3763eb 0%, #3764eb1c 100%);
+}
+.body-team .info-team{
+    padding: 20px;
+    background-color: #fff;
+}
+.body-team .info-team h4{
+    margin-bottom: 5px;
+}
+.body-team .info-team span{
+    color: #6A7C92;
+}
+/*===========================
+    09. Client CSS
+===========================*/
+.clients-logo{
+    margin-top: 150px;
+}
+.cl-logo{
+    padding: 0 50px;
+}
+.cl-logo svg{
+    fill: #8f8f8f;
+    width: 100%;
+    cursor: pointer;
+    transition: .3s;
+}
+.cl-logo svg:hover{
+    fill: #051441;
+}
+/*===========================
+    10. Works View CSS
+===========================*/
+.works{
+    margin-top: 70px;
+    padding: 100px 0;
+    position: relative;
+    clip-path: polygon(0 0, 100% 12%, 100% 88%, 0 100%);
+    background-image: url("../images/cta-bg.jpg");
+    background-position: center;
+}
+.works .overlay::before{
+    background: linear-gradient(to right, #3763eb 0%, rgba(112, 88, 232, 0.356) 100%);
+    z-index: -1;
+}
+.wrk-content span,
+.wrk-content h2,
+.wrk-content p{
+    color: #fff;
+}
+.wrk-content span{
+    font-size: 25px;
+    font-weight: 700;
+}
+.wrk-content h2{
+    margin: 20px 0;
+}
+.btn-view-work{
+    padding: 16px 45px;
+}
+/*===========================
+    11. Contact CSS
+===========================*/
+.contact{
+    margin-top: 20px;
+    padding-top: 100px;
+}
+.info-contact{
+    padding: 20px;
+    border: 1px solid #F4EEFB;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    transition: all .3s;
+}
+.info-contact:hover .c-icon{
+    background-position: top center;
+    box-shadow: 0px 0px 30px rgba(46, 87, 217, 0.45);
+} 
+.info-contact .c-icon{
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+    margin-right: 15px;
+    background: linear-gradient(#3763eb 0%, #6f58e8 100%);
+    border-radius: 50%;
+    transition: all .3s;
+}
+.info-contact .c-icon svg{
+    width: 26px;
+    height: 26px;
+    fill: #fff;
+}
+.contact-cnntent h4{
+    margin-bottom: 5px;
+    color: $blueColor; 
+}
+.form-contact{
+    padding: 50px 0;
+    border: 1px solid #F4EEFB;
+    border-radius: 10px;
+    transition: .3s;
+}
+.inputs{
+    margin-top: 50px;
+    padding: 0 40px;
+}
+.form-contact input,.form-contact textarea{
+    width: 100%;
+    font-size: 16px;
+    color: #6A7C92;
+    padding: 20px;
+    border: 1px solid #F4EEFB;
+    border-radius: 30px;
+    margin-bottom: 25px;
+}
+.form-contact input:focus,.form-contact textarea:focus{
+    border: 1px solid $blueColor;
+}
+.inputs button{
+    width: 100%;
+    padding: 20px 0;
+}
+/*===========================
+    12. Subscribe Email CSS
+===========================*/
+.subs-email{
+    position: relative;
+    margin-top: 50px;
+    padding: 80px 0;
+    background-image: url("../images/common-bg.svg");
+    background-size: cover;
+}
+.subs-email span{
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+.subs-email h2{
+    color: #fff;
+}
+.input-email{
+    position: relative;
+}
+.subs-email input{
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border: 0;
+    border-radius: 50px;
+}
+.subs-email input:focus{
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.219);
+}
+.s-icon{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    right: 20px;
+    transform: translate(0,-50%);
+    background: linear-gradient(#3763eb 0%, #6f58e8 100%);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.s-icon svg{
+    width: 36px;
+    height: 36px;
+    margin: 7px;
+    fill: #fff;
+    transform: rotate(150deg);
+}
+/*===========================
+    13. Footer CSS
+===========================*/
+footer{
+    padding-top: 100px;
+    background-color: #EFF2F9;
+}
+footer .info-our{
+    padding-right: 100px;
+}
+footer .navbar-brand img{
+    max-width: 170px;
+    margin-bottom: 30px;
+}
+footer ul h4{
+    margin: 10px 0 40px;
+}
+footer ul li{
+    margin-bottom: 10px;
+}
+footer ul li a{
+    color: #6A7C92;
+}
+.copyright{
+    width: 100%;
+    margin-top: 80px;
+    padding: 20px 0;
+    border-top: 2px solid #6a7c9288;
+}
+.copyright p{
+    font-size: 15px;
+}
+
+/*===========================
+    14. Media Query CSS
+===========================*/
+@media (max-width: 991.98px) {
+    .navbar-collapse{
+        width: 100%;
+    }
+    .carousel-caption{
+        padding: 0 0px;
+        left: 5%;
+        right: 5%;
+    }
+    .carousel-control-prev,.carousel-control-next{
+        top: 93%;
+        transform: translate(auto);
+    }
+    .carousel-control-prev{
+        left: 42%;
+    }
+    .carousel-control-next{
+        right: 42%;
+    }
+    .about-info{
+        padding-right: 20%;
+    }
+    .works-process::before{
+        display: none;
+    }
+    .text-MD-left{
+        text-align: start;
+    }
+    .icon-w-process{
+        justify-content: start;
+    }
+    .info-w-process,
+    .icon-w-process,
+    .img-w-process{
+        padding: 0 70px;
+    }
+    .btn-view-work{
+        margin-top: 40px;
+    }
+    .input-email{
+        width: 80%;
+        margin-top: 30px;
+    }
+}
+@media (max-width: 767.98px) {
+    h2{
+        font-size: 31px;
+    }
+    .head-features span,
+    .head-services span,
+    .head-process span,
+    .head-teams span,
+    .head-form span{
+    font-size: 20px;
+    }
+    .carousel-caption {
+        top: auto;
+    }
+    .carousel-control-prev{
+        left: 38%;
+    }
+    .carousel-control-next{
+        right: 38%;
+    }
+    .about-info{
+        padding-right: 0;
+    }
+    .works{
+        background-position: inherit;
+    } 
+    .numbers-about{
+        display: block;
+    }
+    .input-email{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+

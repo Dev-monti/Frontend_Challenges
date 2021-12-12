@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CONTACTS</title>
+
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-xl-4 col-lg-4 col-md-6 d-flex nav-links">
+                    <h2 class="text-white">Contacts</h2>
+                    <button class="btn-head btn-new active" linkto="form-info">new</button>
+                    <button class="btn-head btn-list" linkto="list-contact">list<span>0</span></button>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <input type="search" class="search-fullname" placeholder="Search items...">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="container hero">
+        <div class="form-info content-contacts active">
+            <h4 class="text-center">Person Information</h4>
+            <form action="" id="form" class="row justify-content-around">
+                <div class="col-xl-5 col-lg-5 col-md-6">
+                    <label for="fullname">Full name</label>
+                    <input type="text" id="flname" class="name-person input-form">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="email-person input-form">
+                    <label for="Companyname">Company or job name</label>
+                    <input type="text" id="com_job" class="input-form job-person">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" class="input-form address-person">
+                </div>
+                <div class="col-xl-5 col-lg-5 col-md-6">
+                    <label for="numberphone">Number phone</label>
+                    <input type="number" id="num_phone" class="number-Ph-person input-form">
+                    <label for="notes">Notes</label>
+                    <textarea name="" id="note" cols="" rows="5" class="input-form note-person"></textarea>
+                    <input type="submit" value="Add" class="btn btn-secondary btn-add">
+                </div>
+            </form>
+        </div>
+        <div class="list-contact content-contacts">
+            <h4 class="text-center">Names List</h4>
+            <div class="row justify-content-center">
+                <div class="row col-11 group-items"></div>
+            </div>
+        </div>
+        <div class="text-center modal-add"></div>
+    </section>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

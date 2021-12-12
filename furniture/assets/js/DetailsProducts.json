@@ -1,0 +1,51 @@
+[
+    {
+        "id": "1",
+        "titelProduct": "wooden chair",
+        "priceProduct": "65.00",
+        "pngProduct": "assets/images/collection/arrivals1.png"
+    },
+    {
+        "id": "2",
+        "titelProduct": "Single Armchair",
+        "priceProduct": "80.00",
+        "pngProduct": "assets/images/collection/arrivals2.png"
+    },
+    {
+        "id": "3",
+        "titelProduct": "mooden chair",
+        "priceProduct": "40.00",
+        "pngProduct": "assets/images/collection/arrivals3.png"
+    },
+    {
+        "id": "4",
+        "titelProduct": "Stylish Chair",
+        "priceProduct": "100.00",
+        "pngProduct": "assets/images/collection/arrivals4.png"
+    },
+    {
+        "id": "5",
+        "titelProduct": "Modern Chair",
+        "priceProduct": "120.00",
+        "pngProduct": "assets/images/collection/arrivals5.png"
+    },
+    {
+        "id": "6",
+        "titelProduct": "Mapple Table",
+        "priceProduct": "140.00",
+        "pngProduct": "assets/images/collection/arrivals6.png"
+    },
+    {
+        "id": "7",
+        "titelProduct": "Arm Chair",
+        "priceProduct": "90.00",
+        "pngProduct": "assets/images/collection/arrivals7.png"
+    },
+    {
+        "id": "8",
+        "titelProduct": "Wooden Bed",
+        "priceProduct": "140.00",
+        "pngProduct": "assets/images/collection/arrivals8.png"
+    }
+
+]

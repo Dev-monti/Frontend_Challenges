@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Kumbh+Sans:wght@300;700&display=swap');
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 16px;
+    color: hsl(0, 0%, 0%);
+    box-sizing: border-box;
+
+--color: hsl(220, 13%, 13%);
+--color: hsl(219, 9%, 45%);
+--color: hsl(220, 14%, 75%);
+--color: hsl(223, 64%, 98%);
+--color: hsl(0, 0%, 100%);
+--color: hsl(0, 0%, 0%);
+
+--color: hsl(26, 100%, 55%);
+--color: hsl(25, 100%, 94%);
+
+}
+*,
+ul{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+button{
+    background: none;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.container{
+    padding: 0 20px;
+}
+header,
+header nav,
+header nav ul,
+.navbar-rigth,
+.pd-details,
+.pd-prix,
+.pd-fac,
+.pd-num{
+    display: flex;
+    align-items: center;
+}
+header{
+    padding: 30px 0;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    position: relative;
+}
+.btn-menu{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: none;
+}
+header nav ul{
+    margin-left: 40px;
+}
+header nav ul li{
+    margin: 0 10px;
+    color: hsl(219, 9%, 45%);
+}
+header nav ul li a{
+    font-size: .9rem;
+    color: inherit;
+}
+.navbar-rigth img{
+    cursor: pointer;
+}
+.navbar-rigth img:nth-child(2){
+    margin-left: 20px;
+    width: 30px;
+}
+.btn-cart{
+    position: relative;
+}
+.btn-cart .Qnty_prd{
+    width: 25px;
+    height: 25px;
+    /* padding: 5px; */
+    bottom: 80%;
+    left: 80%;
+    position: absolute;
+    color: #fff;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 50%;
+    display: none;
+}
+.Qnty_prd.show{
+    display: inline-block;
+}
+.cartProduct{
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    width: 375px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 13px 33px 0px #0000001f;
+    display: none;
+}
+.cartProduct.active{
+    display: inline-block;
+}
+.cartProduct h4{
+    padding: 15px 30px;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+}
+.dt-bd-cartshop h6{
+    margin: 20px auto;
+}
+.body_cartProduct{
+    padding: 10px;
+}
+.dt-bd-cartshop{
+    display: flex;
+    align-items: center;
+}
+.dt-bd-cartshop > img:nth-child(1){
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.dt-bd-cartshop > img:nth-of-type(2){
+    width: 20px;
+    height: 25px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.dt-bd-cartshop p{
+    display: inline-block;
+    font-weight: 700;
+    color: rgb(150, 150, 150);
+    margin: 0;
+}
+.dt-bd-cartshop .total-price{
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+.body-product{
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+}
+.body-product > div{
+    padding: 0 50px;
+}
+.pd-imgs{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 15px;
+}
+.pd-imgs img{
+    border-radius: 20px;
+}
+.imgs-small{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+}
+.imgs-small .img-small{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.imgs-small .img-small.clicked{
+    border: 2px solid  hsl(26, 100%, 55%);
+    border-radius: 23px;
+}
+.imgs-small .img-small.clicked::before{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff9c;
+    content: "";
+    position: absolute;
+    z-index: 99;
+}
+.pd-details-body span{
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    font-size: .8rem;
+    letter-spacing: 5px;
+}
+.pd-details-body h2{
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 15px 0 20px;
+}
+.pd-details-body p{
+    font-size: 1rem;
+    color: hsla(217, 9%, 45%);
+    margin-bottom: 15px;
+}
+.pd-prix h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.pd-prix span{
+    background-color: hsla(26, 100%, 55%, 0.15);
+    padding: 5px 10px;
+    margin-left: 20px;
+}
+.pd-details-body p:nth-of-type(2){
+    font-size: .8rem;
+    margin-top: 10px;
+}
+.pd-num{
+    padding: 0 15px;
+    margin-right: 20px;
+    background-color: hsla(220, 14%, 75%, 0.2);
+    border-radius: 7px;
+}
+.pd-num button{
+    padding: 12px 10px;
+    width: 15px;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+.pd-num h4{
+    text-align: center;
+    width: 30px;
+    margin: 0 15px;
+}
+.pd-fac > button{
+    padding: 14px 60px;
+    color: #fff;
+    font-weight: 700;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 7px;
+    transition: opacity .5s;
+}
+.pd-fac > button:hover{
+    opacity: .7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1199.98px) {
+    .body-product > div{
+        padding: 0;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .body-product{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-row-gap: 50px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    header{
+        padding: 20px 0;
+        border: 0;
+    }
+    .body-product{
+        margin: 20px 0;
+    }
+    .btn-menu{
+        display: inline-block;
+    }
+    header nav ul{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 30px 0;
+        background-color: #fff;
+
+    }
+    header nav ul.show{
+        display: block;
+    }
+    header nav ul li{
+        margin: 0 0 20px 0;
+        font-weight: 700;
+        color: #000;
+    }
+    .logo{
+        margin-left: 40px;
+    }
+    .pd-details-body h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .pd-fac{
+        display: block;
+    }
+    .pd-num{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .pd-fac > button{
+        width: 100%;
+    }
+    .cartProduct{
+        left: 10px;
+        width: auto;
+    }
+}

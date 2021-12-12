@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--===== META DATA ====-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--===== TITEL ====-->
+    <title>Landing page Ecommerce Sofa </title>
+
+    <!--===== FAVICON ====-->
+    <link rel="shortcut icon" href="assets/logo/sofa-logo-icon-concept-vector-260nw-527808973.png" type="image/x-icon">
+
+    <!--===== GOOGLE FONTS ====-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!--===== BOOTSTRAB CSS ====-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!--===== BOOTSTRAB ICONS ====-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+ 
+    <!--===== STYLE ====-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!--===== HEADER STARTS ====-->
+    <header>
+        <div class="search_products fixed-top ">
+            <div class="container">
+                <div class="content_search d-flex align-items-center">
+                    <i class="bi bi-search"></i>                   
+                    <input class="search_product" type="search" placeholder="Search">
+                    <i class="bi bi-x"></i>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light ">
+            <div class="container">
+              <a class="navbar-brand" href="#">Sofa.</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#new_arrivals">New Arrival</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#featured">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#latest_blog">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#footer">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="nav-bar-icons d-flex justify-content-between">
+                <i class="bi bi-search" value="close"></i>
+                <i class="bi bi-gear"></i>
+                <i class="bi bi-cart3 nav-cart"></i>
+                <span class="num_products_cart">0</span>
+              </div>
+            </div>
+        </nav>
+        <div class="list-shop-cart">
+            <i class="bi bi-x-lg close-list-shop-cart"></i>
+            <h3>Your Shop Cart</h3>
+            <div class="list-shopping"></div>
+            <h3 class="total-price">Total : $ <span>0</span></h3>
+        </div>
+        <div class="view-search-products fixed-top">
+            <div class="container">
+                <div class="row search-container"></div>
+            </div>
+        </div>
+    </header>
+    <!--===== HEADER ENDS ====-->
+
+    <!--===== HOME STARTS ====-->
+    <section id="home" class="home">
+        <div class="container">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button class="btn-slide active" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+                  <button class="btn-slide" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button class="btn-slide" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner content-home">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="info-product col-xl-7 col-lg-7 col-md-12">
+                                <div class="body-info-prdc">
+                                    <h4>Great Design Collection</h4>
+                                    <h2>Cloth Covered Accent Chair</h2>
+                                    <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, 
+                                        Sed Do Eiuiana Smod Tempor Ut Labore Et Dolore Magna Aliqua. 
+                                        Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris 
+                                        Nisi Ut Aliquip.
+                                    </p>
+                                    <span>$399.00</span>
+                                    <span>$499.00</span>
+                                    <div class="content-btn">
+                                        <button>+ Add to Cart</button>
+                                        <button>More info</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-product col-xl-5 col-lg-5 col-md-10">
+                                <img src="assets/images/slider/slider1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="info-product col-xl-7 col-lg-7 col-md-12">
+                                <div class="body-info-prdc">
+                                    <h4>Great Design Collection</h4>
+                                    <h2>Mapple Wood Accent Chair</h2>
+                                    <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, 
+                                        Sed Do Eiuiana Smod Tempor Ut Labore Et Dolore Magna Aliqua. 
+                                        Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris 
+                                        Nisi Ut Aliquip.
+                                    </p>
+                                    <span>$199.00</span>
+                                    <span>$299.00</span>
+                                    <div class="content-btn">
+                                        <button>+ Add to Cart</button>
+                                        <button>More info</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-product col-xl-5 col-lg-5 col-md-10">
+                                <img src="assets/images/slider/slider3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="info-product col-xl-7 col-lg-7 col-md-12">
+                                <div class="body-info-prdc">
+                                    <h4>Great Design Collection</h4>
+                                    <h2>Valvet Accent Arm Chair</h2>
+                                    <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit, 
+                                        Sed Do Eiuiana Smod Tempor Ut Labore Et Dolore Magna Aliqua. 
+                                        Ut Enim Ad Minim Veniam, Quis Nostrud Exercitation Ullamco Laboris 
+                                        Nisi Ut Aliquip.
+                                    </p>
+                                    <span>$299.00</span>
+                                    <span>$399.00</span>
+                                    <div class="content-btn">
+                                        <button>+ Add to Cart</button>
+                                        <button>More info</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-product col-xl-5 col-lg-5 col-md-10">
+                                <img src="assets/images/slider/slider2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    <!--===== HOME ENDS ====-->
+
+    <!--===== POPULAR PRODUCTS STARTS ====-->
+    <section class="popular_products">
+        <div class="container">
+            <div class="row">
+                <div class="popular_product col-xl-3 col-lg-3 col-md-4 col-sm-9">
+                    <div class="body_p_product">
+                        <div class="img1_p_product"><img src="assets/images/populer-products/p1.png" alt=""></div>
+                        <div class="info_p_product text-center">
+                            <h3>Arm Chair</h3>
+                            <p>Nemo enim ipsam voluptatem quia volu ptas sit asperna aut odit aut</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular_product col-xl-6 col-lg-6 col-md-8 col-sm-12">
+                    <div class="body_p_product d-flex">
+                        <div class="img2_p_product"><img src="assets/images/populer-products/p2.png" alt=""></div>
+                        <div class="info2_p_product">
+                            <h3>Latest Designed Stool and Chair</h3>
+                            <p>Edi Ut Perspiciatis Unde Omnis Iste Natusina Error Sit Voluptatem Accusantium Doloret 
+                                Mque Laudantium, Totam Rem Aperiam.
+                            </p>
+                            <h4>Sales Start from <span>$99.00</span></h4>
+                            <button>Discover More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular_product col-xl-3 col-lg-3 col-md-4 col-sm-9">
+                    <div class="body_p_product">
+                        <div class="img3_p_product"><img src="assets/images/populer-products/p3.png" alt=""></div>
+                        <div class="info_p_product text-center">
+                            <h3>Hanging Lamp</h3>
+                            <p>Nemo enim ipsam voluptatem quia volu ptas sit asperna aut odit aut</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===== POPULAR PRODUCTS ENDS ====-->
+
+    <!--===== NEW ARRIVALS STARTS ====-->
+    <section id="new_arrivals" class="new_arrivals">
+        <div class="container">
+            <h2>New Arrivals</h2>
+            <div class="row ProductsUI"></div>
+            <div class="view-product row">
+                <div class="col-xl-4 col-lg-5 col-md-8 col-sm-10 img-view-product">
+                    <img src="" alt="">
+                    <i class="bi bi-x close-view-product"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===== NEW ARRIVALS ENDS ====-->
+
+    <!--===== SOFA COLLECTION STARTS ====-->
+    <section class="sofa-collection">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item singal_sofa d-flex align-items-center active">
+                <div class="img_sofe_collection">
+                    <img src="assets/images/collection/sofa-collection-banner.jpg" alt="">
+                    <div class="overmlay_sofa_coll"></div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="info_sofe_collection col-xl-7 col-lg-7 col-md-12">
+                            <h2>Unlimited Sofa Collection</h2>
+                            <p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                                laboris nisi ut aliquip ex ea commodo consequat. 
+							</p>
+                            <h4>String From <span>$ 199</span></h4>
+                            <button>View More</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item singal_sofa d-flex align-items-center">
+                <div class="img_sofe_collection">
+                    <img src="assets/images/collection/table-banner.jpg" alt="">
+                    <div class="overmlay_sofa_coll"></div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="info_sofe_collection col-xl-7 col-lg-7 col-md-12">
+                            <h2>Unlimited Sofa Collection</h2>
+                            <p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                                laboris nisi ut aliquip ex ea commodo consequat. 
+							</p>
+                            <h4>String From <span>$ 199</span></h4>
+                            <button>View More</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!--===== SOFA COLLECTION ENDS ====-->
+
+    <!--===== FEATURED PRODUCTS STARTS ====-->
+    <section id="featured" class="featured_products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="row">
+                <div class="featured_product col-xl-3 col-lg-3 col-md-6 col-sm-8">
+                    <div class="img_featured_product"><img src="assets/images/features/f1.jpg" alt=""></div>
+                    <div class="info_featured_product text-center">
+                        <div class="starts">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill star-last"></i>
+                            <span>(45 Review)</span>
+                        </div>
+                        <h3>Designed Sofa</h3>
+                        <h4>$160.00</h4>
+                    </div>
+                </div>
+                <div class="featured_product col-xl-3 col-lg-3 col-md-6 col-sm-8">
+                    <div class="img_featured_product"><img src="assets/images/features/f2.jpg" alt=""></div>
+                    <div class="info_featured_product text-center">
+                        <div class="starts">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill star-last"></i>
+                            <span>(45 Review)</span>
+                        </div>
+                        <h3>Dinning Table</h3>
+                        <h4>$200.00</h4>
+                    </div>
+                </div>
+                <div class="featured_product col-xl-3 col-lg-3 col-md-6 col-sm-8">
+                    <div class="img_featured_product"><img src="assets/images/features/f3.jpg" alt=""></div>
+                    <div class="info_featured_product text-center">
+                        <div class="starts">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill star-last"></i>
+                            <span>(45 Review)</span>
+                        </div>
+                        <h3>Chair And Table</h3>
+                        <h4>$100.00</h4>
+                    </div>
+                </div>
+                <div class="featured_product col-xl-3 col-lg-3 col-md-6 col-sm-8">
+                    <div class="img_featured_product"><img src="assets/images/features/f4.jpg" alt=""></div>
+                    <div class="info_featured_product text-center">
+                        <div class="starts">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill star-last"></i>
+                            <span>(45 Review)</span>
+                        </div>
+                        <h3>Modern Arm Chair</h3>
+                        <h4>$299.00</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===== FEATURED PRODUCTS ENDS ====-->
+
+    <!--===== LASTEST BLOG STARTS ====-->
+    <section id="latest_blog" class="latest_blog">
+        <div class="container">
+            <h2>Latest Blog</h2>
+            <div class="row">
+                <div class="singal_blog col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                    <div class="img_blog">
+                        <img src="assets/images/blog/b1.jpg" alt="">
+                        <div class="overlay_img_blog"></div>
+                    </div>
+                    <div class="info_blog">
+                        <h3>Why Brands are Looking at Local Language</h3>
+                        <h5>By Robert Norby / 18th March 2018</h5>
+                        <p>Nemo Enim Ipsam Voluptatem Quia Voluptas Sit Aspernatur Aut Odit Aut Fugit, Sed Quia Consequuntur 
+                            Magni Dolores Eos Qui Ratione Voluptatem Sequi Nesciunt....
+                        </p>
+                    </div>
+                </div>
+                <div class="singal_blog col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                    <div class="img_blog">
+                        <img src="assets/images/blog/b2.jpg" alt="">
+                        <div class="overlay_img_blog"></div>
+                    </div>
+                    <div class="info_blog">
+                        <h3>Why Brands are Looking at Local Language</h3>
+                        <h5>By Robert Norby / 18th March 2018</h5>
+                        <p>Nemo Enim Ipsam Voluptatem Quia Voluptas Sit Aspernatur Aut Odit Aut Fugit, Sed Quia Consequuntur 
+                            Magni Dolores Eos Qui Ratione Voluptatem Sequi Nesciunt....
+                        </p>
+                    </div>
+                </div>
+                <div class="singal_blog col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                    <div class="img_blog">
+                        <img src="assets/images/blog/b3.jpg" alt="">
+                        <div class="overlay_img_blog"></div>
+                    </div>
+                    <div class="info_blog">
+                        <h3>Why Brands are Looking at Local Language</h3>
+                        <h5>By Robert Norby / 18th March 2018</h5>
+                        <p>Nemo Enim Ipsam Voluptatem Quia Voluptas Sit Aspernatur Aut Odit Aut Fugit, Sed Quia Consequuntur 
+                            Magni Dolores Eos Qui Ratione Voluptatem Sequi Nesciunt....
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===== LASTEST BLOG ENDS ====-->
+
+    <!--===== Clients STARTS ====-->
+    <section class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="logo_client col-xl-3 col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="assets/images/clients/c3.png" alt="">
+                </div>
+                <div class="logo_client col-xl-3 col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="assets/images/clients/c4.png" alt="">
+                </div>
+                <div class="logo_client col-xl-3 col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="assets/images/clients/c5.png" alt="">
+                </div>
+                <div class="logo_client col-xl-3 col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="assets/images/clients/c1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===== Clients ENDS ====-->
+
+    <!--===== FOOTER STARTS ====-->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6">
+                    <ul>
+                        <h3>Information</h3>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Store</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6">
+                    <ul>
+                        <h3>Collections</h3>
+                        <li><a href="#">Wooden Chair</a></li>
+                        <li><a href="#">Royal Cloth Sofa</a></li>
+                        <li><a href="#">Accent Chair</a></li>
+                        <li><a href="#">Bed</a></li>
+                        <li><a href="#">Hanging Lamp</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6">
+                    <ul>
+                        <h3>My Accounts</h3>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Order History</a></li>
+                        <li><a href="#">My Cart</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6">
+                    <ul>
+                        <h3>Newsletter</h3>
+                        <li><p>Subscribe to get latest news,update and information.</p></li>
+                        <li><input type="text" placeholder="Enter Email Here...."></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">©Copyright. Designed By Themesine And Developed By Monti</p>
+    </footer>
+    <!--===== FOOTER ENDS ====-->
+
+    <!--===== BOOTSTRAB JS ====-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+    <!--===== MAIN JS ====-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

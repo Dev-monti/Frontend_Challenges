@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--===== META DATA ====-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--===== TITEL ====-->
+    <title>tip-calculator-app-main</title>
+
+    <!--===== TITEL ====-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!--===== GOOGLE FONTS ====-->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--===== BOOTSTRAB CSS ====-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--===== ICONS CSS ====-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!--===== STYLE CSS ====-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container d-flex align-items-center justify-content-center">
+        <div class="row justify-content-around hero">
+            <div class=" col-md-5 col-sm-12 inputs">
+                <label for="">Bill</label>
+                <i class="bi bi-currency-dollar"></i>
+                <input class="input-bill" type="number" value="0">
+                <div class="percent">
+                    <label for="">Select Tip %</label>
+                    <div class="d-flex justify-content-between flex-wrap form-percent" value_target="0">
+                        <input type="submit" value="5%">
+                        <input type="submit" value="10%">
+                        <input type="submit" value="15%">
+                        <input type="submit" value="25%">
+                        <input type="submit" value="50%">
+                        <input class="castom-vlue" type="number" value="">
+                    </div>
+                </div>
+                <label for="">Number of People</label>
+                <i class="bi bi-person-fill"></i>
+                <input class="num-person" type="number" value="0">
+            </div>
+            <div class=" col-md-5 col-sm-12 d-flex flex-column justify-content-between rest">
+                <div>
+                    <div class="d-flex align-items-center justify-content-between title-rest">
+                        <h5 class="text-white">Tip Account</h5>
+                        <div class="account-value"><span>$</span>0.00</div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between title-rest">
+                        <h5 class="text-white">Total .....</h5>
+                        <div class="total-value"><span>$</span>0.00</div>
+                    </div>
+                </div>
+                <button class="btn-rest">REST</button>
+            </div>
+        </div>
+    </section>
+    <!--===== MAIN JS ====-->
+    <script src="main.js"></script>
+</body>
+</html>

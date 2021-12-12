@@ -1,0 +1,321 @@
+/*===========================
+    00. Elements CSS
+===========================*/
+body{
+    font-family: 'Barlow', sans-serif;
+    background: #fffcebc7;
+}
+h2,
+h3{
+    font-family: 'Fraunces', serif;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #fff;
+}
+img{
+    width: 100%;
+}
+@mixin hidden {
+    width: 0;
+    height: 0;
+    overflow: hidden;    
+}
+/*===========================
+    01. Header CSS
+===========================*/
+header{
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    z-index: 9999;
+}
+.logo{
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color: #fff;
+}
+nav ul li{
+    margin-left: 40px;
+}
+nav ul li a{
+    color: #fff;
+}
+.btn-contact a{
+    padding: 10px 20px;
+    color: #000;
+    background: #fff;
+    border-radius: 30px;
+}
+nav i{
+    font-size: 33px;
+    color: #fff;
+    cursor: pointer;
+}
+.Ul-links svg{
+    display: none;
+}
+/*===========================
+    02. Home CSS
+===========================*/
+.home{
+    position: relative;
+    height: 100vh;
+    background-image: url(./images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+.home h1{
+    margin-bottom: 50px;
+}
+.home h1,
+.home i{
+    font-size: 70px;
+    font-weight: 600;
+    color: #fff;
+}
+.home i{
+    animation: animarrow 3s infinite;
+}
+@keyframes animarrow{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+    75%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.content-home{
+    height: 100%;
+}
+/*===========================
+    03. Hero CSS
+===========================*/
+.descreption{
+    padding: 0 120px;
+}
+.descreption h2{
+    font-size: 35px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+.descreption p{
+    margin: 25px 0;
+    font-size: 18px;
+    color: hsla(198, 62%, 26%, 0.603);
+}
+.descreption a{
+    position: relative;
+    font-size: 18px;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: #212529;
+    letter-spacing: 1px;
+    z-index: 1;
+    &::before{
+        content: "";
+        position: absolute;
+        left: -5px;
+        right: -5px;
+        height: 8px;
+        bottom: 2px;
+        background: hsla(51, 100%, 49%, 0.267);
+        border-radius: 25px;
+        z-index: -1;
+    }
+}
+.descreption a.link-two::before{
+    background: hsla(7, 99%, 70%, 0.267);
+}
+.desc-img{
+    padding: 0;
+}
+.desc-bottom{
+    bottom: 30px;
+    padding: 0 150px;
+}
+.desc-bottom.graphic-text{
+    color: hsl(167, 40%, 24%);
+}
+.desc-bottom.graphic-text p{
+    margin-top: 25px;
+    color: hsla(167, 40%, 24%, 0.671);
+}
+.desc-bottom.photography-text{
+    color: hsl(198, 62%, 26%);
+}
+.desc-bottom.photography-text p{
+    margin-top: 25px;
+    color: hsla(198, 62%, 26%, 0.671);
+}
+/*===========================
+    04. Clients CSS
+===========================*/
+.clients{
+    padding: 100px 0;
+}
+.clients h2{
+    margin-bottom: 70px;
+    font-size: 18px;
+    opacity: .5;
+    letter-spacing: 2px;
+}
+.body-client{
+    padding: 0 20px;
+}
+.img-client{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+.img-client img{
+    border-radius: 50%;
+}
+.body-client p{
+    margin: 60px 0 40px;
+    opacity: .6;
+}
+.body-client h3{
+    font-size: 16px;
+    margin: 0;
+}
+.body-client span{
+    font-size: 13px;
+    opacity: .4;
+}
+/*===========================
+    05. Gallery CSS
+===========================*/
+.gallery .container-fluid .row div{
+    padding: 0;
+}
+/*===========================
+    06. Footer CSS
+===========================*/
+footer{
+    padding: 50px 0;
+    background: #94dacc;
+}
+footer h2{
+    color: hsl(168, 35%, 27%);
+    font-weight: 900;
+}
+footer ul:nth-of-type(1){
+    margin: 35px 0 50px;
+}
+footer ul li a{
+    margin: 0 30px;
+    color: hsl(168, 34%, 41%);
+}
+footer ul:nth-of-type(2) li{
+    margin: 0 10px;
+}
+ul li i{
+    color: hsl(168, 34%, 41%);
+    cursor: pointer;
+}
+/*===========================
+    07. Media Query CSS
+===========================*/
+@media (min-width: 991.98px) {
+    .hidden-xl{
+        @include hidden
+    }
+}
+@media (max-width: 991.98px) {
+    .hidden-lg{
+        @include hidden
+    }
+    .descreption{
+        padding: 120px;
+    }
+    .client{
+        margin-top: 30px;
+    }
+    .body-client p{
+        margin: 20px 0 40px;
+        padding: 0 10px;
+    }
+}
+@media (max-width: 767.98px) {
+    .Ul-links{
+        position: absolute;
+        top: 130%;
+        width: 100%;
+        text-align: center;
+        background: #fffceb;
+    }
+    .Ul-links svg{
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        right: 0;
+        transform: rotateX(180deg);
+    }
+    .Ul-links li{
+        display: block;
+        margin: 30px 0;
+    }
+    .Ul-links li a{
+        color: rgba(0, 0, 0, 0.61);
+    }
+    li.btn-contact a{
+        color: #000;
+        background: hsl(51, 100%, 49%);
+        border-radius: 40px;
+    }
+}
+@media (max-width: 575.98px) {
+    .home h1,
+    .home i{
+        font-size: 50px;
+        font-weight: 600;
+        color: #fff;
+    }
+    .descreption{
+        text-align: center;
+        padding: 50px 30px;
+    }
+    .desc-bottom{
+        bottom: 0px;
+        padding: 0 30px;
+    }
+    .client{
+        margin-top: 50px;
+    }
+    .body-client p{
+        margin: 10px 0 20px;
+        padding: 0 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

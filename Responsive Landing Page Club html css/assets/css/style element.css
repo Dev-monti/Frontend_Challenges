@@ -1,0 +1,107 @@
+
+body {
+    background-color: #21212E;
+}
+  
+h1, h2, h3, h4, a, li, button {
+    font-family: 'Poppins', sans-serif;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+    text-transform: capitalize;
+    font-weight: 400;
+}
+  
+h1 {
+    font-size: 50px;
+}
+  
+h2 {
+    font-size: 40px;
+}
+  
+h3 {
+    font-size: 30px;
+}
+  
+h4 {
+    font-size: 25px;
+}
+  
+h5 {
+    font-size: 20px;
+}
+  
+h6 {
+    font-size: 16px;
+    margin: 0;
+}
+  
+a {
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+}
+  
+li {
+    list-style: none;
+}
+  
+a, button {
+    font-size: 15px;
+}
+  
+p {
+    font-size: 14px;
+    color: #ffffff;
+}
+  
+span {
+    color: #46C2FF;
+}
+  
+img {
+    width: 100%;
+}
+  
+button {
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 5px;
+    background: -webkit-gradient(linear, left top, right top, color-stop(-29%, #46C2FF), color-stop(81%, #BD11FA));
+    background: linear-gradient(to right, #46C2FF -29%, #BD11FA 81%);
+    cursor: pointer;
+}
+button:focus,input:focus{
+    outline: 0;
+}
+.m-auto{
+    margin: auto;
+}
+.t-center{
+    text-align: center;
+}
+.d-inline-b{
+    display: inline-block;
+}
+.d-flx{
+    display: flex;
+}
+.justify-s-ar{
+    justify-content: space-around;
+}
+.justify-s-b{
+    justify-content: space-between;
+}
+.justify-end{
+    justify-content: flex-end;
+}
+.align-i-center{
+    align-items: center;
+}
+.align-i-end{
+    align-items: flex-end;
+}
+  

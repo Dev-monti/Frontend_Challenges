@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>[Frontend Mentor] GitHub User Search App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>devfinder</h2>
+            <button class="btn_drakLight" status="light">DARK<img src="images/icon-moon.svg" alt=""></button>
+        </div>
+        <form id="form" class="input_search">
+            <div class="input_body">
+                <img src="images/icon-search.svg" alt="">
+                <input class="inputSearch" type="search" placeholder="Search Github username ...">
+                <h3 class="err">No Result</h3>
+            </div>
+            <button class="btn_search" type="submit">Search</button>
+        </form>
+        <div class="content">
+            <div class="head_content">
+                <img src="https://avatars.githubusercontent.com/u/583231?v=4" alt="">
+                <div class="info_user">
+                    <h2>The Octocat</h2>
+                    <span><a href="https://github.com/github" target="_blank">@github</a></span>
+                    <h3>Joined 28 Mar 2021</h3>
+                </div>
+            </div>
+            <h3 class="name_job">This profile has no bio</h3>
+            <div class="profile_num">
+                <div class="rops">
+                    <p>Repos</p>
+                    <span>7</span>
+                </div>
+                <div class="followers">
+                    <p>Followers</p>
+                    <span>0</span>
+                </div>
+                <div class="folling">
+                    <p>Following</p>
+                    <span>0</span>
+                </div>
+            </div>
+            <div class="other_infUser">
+                <div>
+                    <img src="images/icon-location.svg" alt="">
+                    <h3>San Francisco</h3>
+                </div>
+                <div class="opctyItem">
+                    <img src="images/icon-twitter.svg" alt="">
+                    <h3>Not available</h3>
+                </div>
+                <div>
+                    <img src="images/icon-website.svg" alt="">
+                    <h3><a href="https://github.blog" target="_blank">https://github.blog</a></h3>
+                </div>
+                <div>
+                    <img src="images/icon-company.svg" alt="">
+                    <h3>@github</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
